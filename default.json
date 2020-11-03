@@ -5,22 +5,1622 @@
 },
 
 {
-	"name":"FAVORITE SONG",
-	"sql":"favorite & 1 != 0"
+	"name":"FAVORITE/INVISIBLE",
+	"folder":[
+		{
+			"name":"FAVORITE SONG",
+			"sql":"favorite & 1 != 0"
+		},
+		{
+			"name":"FAVORITE CHART",
+			"sql":"favorite & 2 != 0"
+		},
+		{
+			"name":"INVISIBLE SONG",
+			"sql":"favorite & 4 != 0",
+			"showall" : true
+		},
+		{
+			"name":"INVISIBLE CHART",
+			"sql":"favorite & 8 != 0",
+			"showall" : true
+		}
+	]
 },
+
 {
-	"name":"FAVORITE CHART",
-	"sql":"favorite & 2 != 0"
+	"name":"TITLE",
+	"folder":[
+		{
+			"name":"One Letter",
+			"sql":"lower(title) LIKE '_'"
+		},
+		{
+			"name":"ABCD",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(title) BETWEEN 'a' AND 'd'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(title) BETWEEN 'a' AND 'd') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(title) BETWEEN 'a' AND 'd') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(title) BETWEEN 'a' AND 'd') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(title) BETWEEN 'a' AND 'd') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(title) BETWEEN 'a' AND 'd') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(title) BETWEEN 'a' AND 'd') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(title) BETWEEN 'a' AND 'd') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(title) BETWEEN 'a' AND 'd') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(title) BETWEEN 'a' AND 'd') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(title) BETWEEN 'a' AND 'd') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(title) BETWEEN 'a' AND 'd') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(title) BETWEEN 'a' AND 'd') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(title) BETWEEN 'a' AND 'd') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(title) BETWEEN 'a' AND 'd') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"EFGH",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(title) BETWEEN 'e' AND 'h'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(title) BETWEEN 'e' AND 'h') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(title) BETWEEN 'e' AND 'h') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(title) BETWEEN 'e' AND 'h') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(title) BETWEEN 'e' AND 'h') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(title) BETWEEN 'e' AND 'h') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(title) BETWEEN 'e' AND 'h') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(title) BETWEEN 'e' AND 'h') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(title) BETWEEN 'e' AND 'h') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(title) BETWEEN 'e' AND 'h') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(title) BETWEEN 'e' AND 'h') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(title) BETWEEN 'e' AND 'h') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(title) BETWEEN 'e' AND 'h') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(title) BETWEEN 'e' AND 'h') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(title) BETWEEN 'e' AND 'h') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"IJKL",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(title) BETWEEN 'i' AND 'l'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(title) BETWEEN 'i' AND 'l') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(title) BETWEEN 'i' AND 'l') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(title) BETWEEN 'i' AND 'l') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(title) BETWEEN 'i' AND 'l') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(title) BETWEEN 'i' AND 'l') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(title) BETWEEN 'i' AND 'l') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(title) BETWEEN 'i' AND 'l') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(title) BETWEEN 'i' AND 'l') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(title) BETWEEN 'i' AND 'l') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(title) BETWEEN 'i' AND 'l') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(title) BETWEEN 'i' AND 'l') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(title) BETWEEN 'i' AND 'l') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(title) BETWEEN 'i' AND 'l') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(title) BETWEEN 'i' AND 'l') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"MNOP",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(title) BETWEEN 'm' AND 'p'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(title) BETWEEN 'm' AND 'p') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(title) BETWEEN 'm' AND 'p') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(title) BETWEEN 'm' AND 'p') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(title) BETWEEN 'm' AND 'p') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(title) BETWEEN 'm' AND 'p') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(title) BETWEEN 'm' AND 'p') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(title) BETWEEN 'm' AND 'p') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(title) BETWEEN 'm' AND 'p') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(title) BETWEEN 'm' AND 'p') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(title) BETWEEN 'm' AND 'p') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(title) BETWEEN 'm' AND 'p') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(title) BETWEEN 'm' AND 'p') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(title) BETWEEN 'm' AND 'p') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(title) BETWEEN 'm' AND 'p') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"QRST",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(title) BETWEEN 'q' AND 't'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(title) BETWEEN 'q' AND 't') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(title) BETWEEN 'q' AND 't') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(title) BETWEEN 'q' AND 't') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(title) BETWEEN 'q' AND 't') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(title) BETWEEN 'q' AND 't') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(title) BETWEEN 'q' AND 't') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(title) BETWEEN 'q' AND 't') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(title) BETWEEN 'q' AND 't') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(title) BETWEEN 'q' AND 't') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(title) BETWEEN 'q' AND 't') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(title) BETWEEN 'q' AND 't') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(title) BETWEEN 'q' AND 't') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(title) BETWEEN 'q' AND 't') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(title) BETWEEN 'q' AND 't') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"VXWXYZ",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(title) BETWEEN 'v' AND 'z'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(title) BETWEEN 'v' AND 'z') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(title) BETWEEN 'v' AND 'z') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(title) BETWEEN 'v' AND 'z') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(title) BETWEEN 'v' AND 'z') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(title) BETWEEN 'v' AND 'z') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(title) BETWEEN 'v' AND 'z') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(title) BETWEEN 'v' AND 'z') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(title) BETWEEN 'v' AND 'z') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(title) BETWEEN 'v' AND 'z') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(title) BETWEEN 'v' AND 'z') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(title) BETWEEN 'v' AND 'z') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(title) BETWEEN 'v' AND 'z') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(title) BETWEEN 'v' AND 'z') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(title) BETWEEN 'v' AND 'z') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"OTHERS",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(title) NOT BETWEEN 'a' AND 'z'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(title) NOT BETWEEN 'a' AND 'z') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(title) NOT BETWEEN 'a' AND 'z') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(title) NOT BETWEEN 'a' AND 'z') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(title) NOT BETWEEN 'a' AND 'z') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(title) NOT BETWEEN 'a' AND 'z') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(title) NOT BETWEEN 'a' AND 'z') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(title) NOT BETWEEN 'a' AND 'z') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(title) NOT BETWEEN 'a' AND 'z') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(title) NOT BETWEEN 'a' AND 'z') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(title) NOT BETWEEN 'a' AND 'z') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(title) NOT BETWEEN 'a' AND 'z') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(title) NOT BETWEEN 'a' AND 'z') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(title) NOT BETWEEN 'a' AND 'z') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(title) NOT BETWEEN 'a' AND 'z') AND (level >= 13)"
+				}
+			]
+		}
+	]
 },
+
 {
-	"name":"INVISIBLE SONG",
-	"sql":"favorite & 4 != 0",
-	"showall" : true
+	"name":"GENRE",
+	"folder":[
+		{
+			"name":"HANZ UP",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(genre) LIKE '%handz%up%' or lower(genre) LIKE '%ハンズアップ%'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(genre) LIKE '%handz%up%' or lower(genre) LIKE '%ハンズアップ%') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(genre) LIKE '%handz%up%' or lower(genre) LIKE '%ハンズアップ%') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(genre) LIKE '%handz%up%' or lower(genre) LIKE '%ハンズアップ%') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(genre) LIKE '%handz%up%' or lower(genre) LIKE '%ハンズアップ%') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(genre) LIKE '%handz%up%' or lower(genre) LIKE '%ハンズアップ%') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(genre) LIKE '%handz%up%' or lower(genre) LIKE '%ハンズアップ%') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(genre) LIKE '%handz%up%' or lower(genre) LIKE '%ハンズアップ%') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(genre) LIKE '%handz%up%' or lower(genre) LIKE '%ハンズアップ%') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(genre) LIKE '%handz%up%' or lower(genre) LIKE '%ハンズアップ%') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(genre) LIKE '%handz%up%' or lower(genre) LIKE '%ハンズアップ%') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(genre) LIKE '%handz%up%' or lower(genre) LIKE '%ハンズアップ%') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(genre) LIKE '%handz%up%' or lower(genre) LIKE '%ハンズアップ%') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(genre) LIKE '%handz%up%' or lower(genre) LIKE '%ハンズアップ%') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(genre) LIKE '%handz%up%' or lower(genre) LIKE '%ハンズアップ%') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"HARD CORE",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(genre) LIKE '%hard%core%' or lower(genre) LIKE '%ハードコア%'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(genre) LIKE '%hard%core%' or lower(genre) LIKE '%ハードコア%') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(genre) LIKE '%hard%core%' or lower(genre) LIKE '%ハードコア%') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(genre) LIKE '%hard%core%' or lower(genre) LIKE '%ハードコア%') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(genre) LIKE '%hard%core%' or lower(genre) LIKE '%ハードコア%') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(genre) LIKE '%hard%core%' or lower(genre) LIKE '%ハードコア%') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(genre) LIKE '%hard%core%' or lower(genre) LIKE '%ハードコア%') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(genre) LIKE '%hard%core%' or lower(genre) LIKE '%ハードコア%') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(genre) LIKE '%hard%core%' or lower(genre) LIKE '%ハードコア%') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(genre) LIKE '%hard%core%' or lower(genre) LIKE '%ハードコア%') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(genre) LIKE '%hard%core%' or lower(genre) LIKE '%ハードコア%') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(genre) LIKE '%hard%core%' or lower(genre) LIKE '%ハードコア%') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(genre) LIKE '%hard%core%' or lower(genre) LIKE '%ハードコア%') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(genre) LIKE '%hard%core%' or lower(genre) LIKE '%ハードコア%') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(genre) LIKE '%hard%core%' or lower(genre) LIKE '%ハードコア%') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"EDM",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(genre) LIKE '%edm%'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(genre) LIKE '%edm%') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(genre) LIKE '%edm%') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(genre) LIKE '%edm%') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(genre) LIKE '%edm%') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(genre) LIKE '%edm%') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(genre) LIKE '%edm%') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(genre) LIKE '%edm%') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(genre) LIKE '%edm%') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(genre) LIKE '%edm%') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(genre) LIKE '%edm%') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(genre) LIKE '%edm%') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(genre) LIKE '%edm%') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(genre) LIKE '%edm%') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(genre) LIKE '%edm%') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"TECHNO",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"GAME MUSIC",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(genre) LIKE '%game%music%' or lower(genre) LIKE '%ゲームミュージック%'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(genre) LIKE '%game%music%' or lower(genre) LIKE '%ゲームミュージック%') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(genre) LIKE '%game%music%' or lower(genre) LIKE '%ゲームミュージック%') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(genre) LIKE '%game%music%' or lower(genre) LIKE '%ゲームミュージック%') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(genre) LIKE '%game%music%' or lower(genre) LIKE '%ゲームミュージック%') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(genre) LIKE '%game%music%' or lower(genre) LIKE '%ゲームミュージック%') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(genre) LIKE '%game%music%' or lower(genre) LIKE '%ゲームミュージック%') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(genre) LIKE '%game%music%' or lower(genre) LIKE '%ゲームミュージック%') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(genre) LIKE '%game%music%' or lower(genre) LIKE '%ゲームミュージック%') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(genre) LIKE '%game%music%' or lower(genre) LIKE '%ゲームミュージック%') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(genre) LIKE '%game%music%' or lower(genre) LIKE '%ゲームミュージック%') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(genre) LIKE '%game%music%' or lower(genre) LIKE '%ゲームミュージック%') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(genre) LIKE '%game%music%' or lower(genre) LIKE '%ゲームミュージック%') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(genre) LIKE '%game%music%' or lower(genre) LIKE '%ゲームミュージック%') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(genre) LIKE '%game%music%' or lower(genre) LIKE '%ゲームミュージック%') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"POP",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(genre) LIKE '%pop%' or lower(genre) LIKE '%ポップ%'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(genre) LIKE '%pop%' or lower(genre) LIKE '%ポップ%') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(genre) LIKE '%pop%' or lower(genre) LIKE '%ポップ%') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(genre) LIKE '%pop%' or lower(genre) LIKE '%ポップ%') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(genre) LIKE '%pop%' or lower(genre) LIKE '%ポップ%') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(genre) LIKE '%pop%' or lower(genre) LIKE '%ポップ%') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(genre) LIKE '%pop%' or lower(genre) LIKE '%ポップ%') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(genre) LIKE '%pop%' or lower(genre) LIKE '%ポップ%') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(genre) LIKE '%pop%' or lower(genre) LIKE '%ポップ%') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(genre) LIKE '%pop%' or lower(genre) LIKE '%ポップ%') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(genre) LIKE '%pop%' or lower(genre) LIKE '%ポップ%') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(genre) LIKE '%pop%' or lower(genre) LIKE '%ポップ%') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(genre) LIKE '%pop%' or lower(genre) LIKE '%ポップ%') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(genre) LIKE '%pop%' or lower(genre) LIKE '%ポップ%') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(genre) LIKE '%pop%' or lower(genre) LIKE '%ポップ%') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"DRUM'N'BASS",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(genre) LIKE '%drum''n''bass%'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(genre) LIKE '%drum''n''bass%') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(genre) LIKE '%drum''n''bass%') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(genre) LIKE '%drum''n''bass%') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(genre) LIKE '%drum''n''bass%') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(genre) LIKE '%drum''n''bass%') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(genre) LIKE '%drum''n''bass%') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(genre) LIKE '%drum''n''bass%') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(genre) LIKE '%drum''n''bass%') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(genre) LIKE '%drum''n''bass%') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(genre) LIKE '%drum''n''bass%') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(genre) LIKE '%drum''n''bass%') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(genre) LIKE '%drum''n''bass%') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(genre) LIKE '%drum''n''bass%') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(genre) LIKE '%drum''n''bass%') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"TRANCE",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(genre) LIKE '%trance%' or lower(genre) LIKE '%トランス%'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(genre) LIKE '%trance%' or lower(genre) LIKE '%トランス%') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(genre) LIKE '%trance%' or lower(genre) LIKE '%トランス%') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(genre) LIKE '%trance%' or lower(genre) LIKE '%トランス%') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(genre) LIKE '%trance%' or lower(genre) LIKE '%トランス%') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(genre) LIKE '%trance%' or lower(genre) LIKE '%トランス%') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(genre) LIKE '%trance%' or lower(genre) LIKE '%トランス%') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(genre) LIKE '%trance%' or lower(genre) LIKE '%トランス%') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(genre) LIKE '%trance%' or lower(genre) LIKE '%トランス%') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(genre) LIKE '%trance%' or lower(genre) LIKE '%トランス%') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(genre) LIKE '%trance%' or lower(genre) LIKE '%トランス%') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(genre) LIKE '%trance%' or lower(genre) LIKE '%トランス%') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(genre) LIKE '%trance%' or lower(genre) LIKE '%トランス%') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(genre) LIKE '%trance%' or lower(genre) LIKE '%トランス%') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(genre) LIKE '%trance%' or lower(genre) LIKE '%トランス%') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"EUROBEAT",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(genre) LIKE '%euro%beat%' or lower(genre) LIKE '%ユーロビート%'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(genre) LIKE '%euro%beat%' or lower(genre) LIKE '%ユーロビート%') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(genre) LIKE '%euro%beat%' or lower(genre) LIKE '%ユーロビート%') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(genre) LIKE '%euro%beat%' or lower(genre) LIKE '%ユーロビート%') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(genre) LIKE '%euro%beat%' or lower(genre) LIKE '%ユーロビート%') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(genre) LIKE '%euro%beat%' or lower(genre) LIKE '%ユーロビート%') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(genre) LIKE '%euro%beat%' or lower(genre) LIKE '%ユーロビート%') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(genre) LIKE '%euro%beat%' or lower(genre) LIKE '%ユーロビート%') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(genre) LIKE '%euro%beat%' or lower(genre) LIKE '%ユーロビート%') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(genre) LIKE '%euro%beat%' or lower(genre) LIKE '%ユーロビート%') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(genre) LIKE '%euro%beat%' or lower(genre) LIKE '%ユーロビート%') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(genre) LIKE '%euro%beat%' or lower(genre) LIKE '%ユーロビート%') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(genre) LIKE '%euro%beat%' or lower(genre) LIKE '%ユーロビート%') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(genre) LIKE '%euro%beat%' or lower(genre) LIKE '%ユーロビート%') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(genre) LIKE '%euro%beat%' or lower(genre) LIKE '%ユーロビート%') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"ROCK",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"SWING",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"FUNKOT",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"FUSION",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"JAZZ",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level >= 13)"
+				}
+			]
+		}
+	]
 },
+
 {
-	"name":"INVISIBLE CHART",
-	"sql":"favorite & 8 != 0",
-	"showall" : true
+	"name":"BPM",
+	"folder":[
+		{
+			"name":"Under 100",
+			"sql":"maxbpm <= 100"
+		},
+		{
+			"name":"101 ~ 200",
+			"sql":"maxbpm BETWEEN 101 AND 200"
+		},
+		{
+			"name":"201 ~ 300",
+			"sql":"maxbpm BETWEEN 201 AND 300"
+		},
+		{
+			"name":"OVER 300",
+			"sql":"maxbpm > 300"
+		}
+	]
+},
+
+{
+	"name":"TOTAL NOTES",
+	"folder":[
+		{
+			"name":"Under 100",
+			"sql":"song.notes <= 100"
+		},
+		{
+			"name":"101 ~ 200",
+			"sql":"song.notes BETWEEN 101 AND 200"
+		},
+		{
+			"name":"201 ~ 300",
+			"sql":"song.notes BETWEEN 201 AND 300"
+		},
+		{
+			"name":"301 ~ 400",
+			"sql":"song.notes BETWEEN 301 AND 400"
+		},
+		{
+			"name":"401 ~ 500",
+			"sql":"song.notes BETWEEN 401 AND 500"
+		},
+		{
+			"name":"501 ~ 600",
+			"sql":"song.notes BETWEEN 501 AND 600"
+		},
+		{
+			"name":"601 ~ 700",
+			"sql":"song.notes BETWEEN 601 AND 700"
+		},
+		{
+			"name":"701 ~ 800",
+			"sql":"song.notes BETWEEN 701 AND 800"
+		},
+		{
+			"name":"801 ~ 900",
+			"sql":"song.notes BETWEEN 801 AND 900"
+		},
+		{
+			"name":"901 ~ 1000",
+			"sql":"song.notes BETWEEN 901 AND 1000"
+		},
+		{
+			"name":"1001 ~ 1100",
+			"sql":"song.notes BETWEEN 1001 AND 1100"
+		},
+		{
+			"name":"1101 ~ 1200",
+			"sql":"song.notes BETWEEN 1101 AND 1200"
+		},
+		{
+			"name":"1201 ~ 1300",
+			"sql":"song.notes BETWEEN 1201 AND 1300"
+		},
+		{
+			"name":"1301 ~ 1400",
+			"sql":"song.notes BETWEEN 1301 AND 1400"
+		},
+		{
+			"name":"1401 ~ 1500",
+			"sql":"song.notes BETWEEN 1401 AND 1500"
+		},
+		{
+			"name":"1501 ~ 1600",
+			"sql":"song.notes BETWEEN 1501 AND 1600"
+		},
+		{
+			"name":"1601 ~ 1700",
+			"sql":"song.notes BETWEEN 1601 AND 1700"
+		},
+		{
+			"name":"1701 ~ 1800",
+			"sql":"song.notes BETWEEN 1701 AND 1800"
+		},
+		{
+			"name":"1801 ~ 1900",
+			"sql":"song.notes BETWEEN 1801 AND 1900"
+		},
+		{
+			"name":"1901 ~ 2000",
+			"sql":"song.notes BETWEEN 1901 AND 2000"
+		},
+		{
+			"name":"2001 ~ 2100",
+			"sql":"song.notes BETWEEN 2001 AND 2100"
+		},
+		{
+			"name":"2101 ~ 2200",
+			"sql":"song.notes BETWEEN 2101 AND 2200"
+		},
+		{
+			"name":"2201 ~ 2300",
+			"sql":"song.notes BETWEEN 2201 AND 2300"
+		},
+		{
+			"name":"2301 ~ 2400",
+			"sql":"song.notes BETWEEN 2301 AND 2400"
+		},
+		{
+			"name":"2401 ~ 2500",
+			"sql":"song.notes BETWEEN 2401 AND 2500"
+		},
+		{
+			"name":"2501 ~ 2600",
+			"sql":"song.notes BETWEEN 2501 AND 2600"
+		},
+		{
+			"name":"2601 ~ 2700",
+			"sql":"song.notes BETWEEN 2601 AND 2700"
+		},
+		{
+			"name":"2701 ~ 2800",
+			"sql":"song.notes BETWEEN 2701 AND 2800"
+		},
+		{
+			"name":"2801 ~ 2900",
+			"sql":"song.notes BETWEEN 2801 AND 2900"
+		},
+		{
+			"name":"2901 ~ 3000",
+			"sql":"song.notes BETWEEN 2901 AND 3000"
+		},
+		{
+			"name":"OVER 3000",
+			"sql":"song.notes > 3000"
+		}
+	]
+},
+
+{
+	"name":"BPM CHANGE",
+	"folder":[
+		{
+			"name":"LEVEL 0",
+			"sql":"(level <= 0 OR level IS NULL) AND (maxbpm != minbpm)"
+		},
+		{
+			"name":"LEVEL 1",
+			"sql":"(level = 1) AND (maxbpm != minbpm)"
+		},
+		{
+			"name":"LEVEL 2",
+			"sql":"(level = 2) AND (maxbpm != minbpm)"
+		},
+		{
+			"name":"LEVEL 3",
+			"sql":"(level = 3) AND (maxbpm != minbpm)"
+		},
+		{
+			"name":"LEVEL 4",
+			"sql":"(level = 4) AND (maxbpm != minbpm)"
+		},
+		{
+			"name":"LEVEL 5",
+			"sql":"(level = 5) AND (maxbpm != minbpm)"
+		},
+		{
+			"name":"LEVEL 6",
+			"sql":"(level = 6) AND (maxbpm != minbpm)"
+		},
+		{
+			"name":"LEVEL 7",
+			"sql":"(level = 7) AND (maxbpm != minbpm)"
+		},
+		{
+			"name":"LEVEL 8",
+			"sql":"(level = 8) AND (maxbpm != minbpm)"
+		},
+		{
+			"name":"LEVEL 9",
+			"sql":"(level = 9) AND (maxbpm != minbpm)"
+		},
+		{
+			"name":"LEVEL 10",
+			"sql":"(level = 10) AND (maxbpm != minbpm)"
+		},
+		{
+			"name":"LEVEL 11",
+			"sql":"(level = 11) AND (maxbpm != minbpm)"
+		},
+		{
+			"name":"LEVEL 12",
+			"sql":"(level = 12) AND (maxbpm != minbpm)"
+		},
+		{
+			"name":"LEVEL 13～",
+			"sql":"(level >= 13) AND (maxbpm != minbpm)"
+		}
+	]
 },
 
 {
