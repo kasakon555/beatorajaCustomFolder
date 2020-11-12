@@ -4,9 +4,4 @@
 
 # Installation
 
-beatoraja/folderにファイルを置いて終わり！
-
-# Author
-
-* 作成者 : KASAKO
-* Blog : https://www.kasacontent.com/
+beatoraja/folderにファイルを置く
