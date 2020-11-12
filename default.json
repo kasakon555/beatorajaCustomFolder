@@ -29,6 +29,211 @@
 },
 
 {
+	"name":"EVENT",
+	"folder":[
+		{
+			"name":"THE BMS OF FIGHTERS XVI -NEO DYSTOPIA-",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"song.path LIKE '%THE BMS OF FIGHTERS XVI -NEO DYSTOPIA-%'"
+				},
+				{
+					"name":"FAVORITE CHART",
+					"sql":"(song.path LIKE '%THE BMS OF FIGHTERS XVI -NEO DYSTOPIA-%') AND (favorite & 2 != 0)"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(song.path LIKE '%THE BMS OF FIGHTERS XVI -NEO DYSTOPIA-%') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(song.path LIKE '%THE BMS OF FIGHTERS XVI -NEO DYSTOPIA-%') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(song.path LIKE '%THE BMS OF FIGHTERS XVI -NEO DYSTOPIA-%') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(song.path LIKE '%THE BMS OF FIGHTERS XVI -NEO DYSTOPIA-%') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(song.path LIKE '%THE BMS OF FIGHTERS XVI -NEO DYSTOPIA-%') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(song.path LIKE '%THE BMS OF FIGHTERS XVI -NEO DYSTOPIA-%') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(song.path LIKE '%THE BMS OF FIGHTERS XVI -NEO DYSTOPIA-%') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(song.path LIKE '%THE BMS OF FIGHTERS XVI -NEO DYSTOPIA-%') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(song.path LIKE '%THE BMS OF FIGHTERS XVI -NEO DYSTOPIA-%') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(song.path LIKE '%THE BMS OF FIGHTERS XVI -NEO DYSTOPIA-%') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(song.path LIKE '%THE BMS OF FIGHTERS XVI -NEO DYSTOPIA-%') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(song.path LIKE '%THE BMS OF FIGHTERS XVI -NEO DYSTOPIA-%') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(song.path LIKE '%THE BMS OF FIGHTERS XVI -NEO DYSTOPIA-%') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(song.path LIKE '%THE BMS OF FIGHTERS XVI -NEO DYSTOPIA-%') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"BOFU2017",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"song.path LIKE '%BOFU2017%'"
+				},
+								{
+					"name":"LEVEL ～0",
+					"sql":"(song.path LIKE '%BOFU2017%') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(song.path LIKE '%BOFU2017%') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(song.path LIKE '%BOFU2017%') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(song.path LIKE '%BOFU2017%') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(song.path LIKE '%BOFU2017%') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(song.path LIKE '%BOFU2017%') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(song.path LIKE '%BOFU2017%') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(song.path LIKE '%BOFU2017%') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(song.path LIKE '%BOFU2017%') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(song.path LIKE '%BOFU2017%') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(song.path LIKE '%BOFU2017%') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(song.path LIKE '%BOFU2017%') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(song.path LIKE '%BOFU2017%') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(song.path LIKE '%BOFU2017%') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"BOFXV",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"song.path LIKE '%BOFXV%'"
+				},
+								{
+					"name":"LEVEL ～0",
+					"sql":"(song.path LIKE '%BOFXV%') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(song.path LIKE '%BOFXV%') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(song.path LIKE '%BOFXV%') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(song.path LIKE '%BOFXV%') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(song.path LIKE '%BOFXV%') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(song.path LIKE '%BOFXV%') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(song.path LIKE '%BOFXV%') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(song.path LIKE '%BOFXV%') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(song.path LIKE '%BOFXV%') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(song.path LIKE '%BOFXV%') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(song.path LIKE '%BOFXV%') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(song.path LIKE '%BOFXV%') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(song.path LIKE '%BOFXV%') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(song.path LIKE '%BOFXV%') AND (level >= 13)"
+				}
+			]
+		}
+	]
+},
+
+{
 	"name":"TITLE",
 	"folder":[
 		{
@@ -487,6 +692,337 @@
 				{
 					"name":"LEVEL 13～",
 					"sql":"(lower(title) NOT BETWEEN 'a' AND 'z') AND (level >= 13)"
+				}
+			]
+		}
+	]
+},
+
+{
+	"name":"ARTIST",
+	"folder":[
+		{
+			"name":"初音ミク",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(artist) LIKE '%初音%ミク%'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(artist) LIKE '%初音%ミク%') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(artist) LIKE '%初音%ミク%') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(artist) LIKE '%初音%ミク%') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(artist) LIKE '%初音%ミク%') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(artist) LIKE '%初音%ミク%') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(artist) LIKE '%初音%ミク%') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(artist) LIKE '%初音%ミク%') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(artist) LIKE '%初音%ミク%') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(artist) LIKE '%初音%ミク%') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(artist) LIKE '%初音%ミク%') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(artist) LIKE '%初音%ミク%') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(artist) LIKE '%初音%ミク%') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(artist) LIKE '%初音%ミク%') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(artist) LIKE '%初音%ミク%') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"巡音ルカ",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(artist) LIKE '%巡音%ルカ%'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(artist) LIKE '%巡音%ルカ%') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(artist) LIKE '%巡音%ルカ%') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(artist) LIKE '%巡音%ルカ%') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(artist) LIKE '%巡音%ルカ%') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(artist) LIKE '%巡音%ルカ%') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(artist) LIKE '%巡音%ルカ%') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(artist) LIKE '%巡音%ルカ%') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(artist) LIKE '%巡音%ルカ%') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(artist) LIKE '%巡音%ルカ%') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(artist) LIKE '%巡音%ルカ%') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(artist) LIKE '%巡音%ルカ%') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(artist) LIKE '%巡音%ルカ%') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(artist) LIKE '%巡音%ルカ%') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(artist) LIKE '%巡音%ルカ%') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"東北きりたん",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"(lower(artist) LIKE '%東北%きりたん%') OR (lower(artist) LIKE '%%きりたん%')"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"((lower(artist) LIKE '%東北%きりたん%') OR (lower(artist) LIKE '%%きりたん%')) AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"((lower(artist) LIKE '%東北%きりたん%') OR (lower(artist) LIKE '%%きりたん%')) AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"((lower(artist) LIKE '%東北%きりたん%') OR (lower(artist) LIKE '%%きりたん%')) AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"((lower(artist) LIKE '%東北%きりたん%') OR (lower(artist) LIKE '%%きりたん%')) AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"((lower(artist) LIKE '%東北%きりたん%') OR (lower(artist) LIKE '%%きりたん%')) AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"((lower(artist) LIKE '%東北%きりたん%') OR (lower(artist) LIKE '%%きりたん%')) AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"((lower(artist) LIKE '%東北%きりたん%') OR (lower(artist) LIKE '%%きりたん%')) AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"((lower(artist) LIKE '%東北%きりたん%') OR (lower(artist) LIKE '%%きりたん%')) AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"((lower(artist) LIKE '%東北%きりたん%') OR (lower(artist) LIKE '%%きりたん%')) AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"((lower(artist) LIKE '%東北%きりたん%') OR (lower(artist) LIKE '%%きりたん%')) AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"((lower(artist) LIKE '%東北%きりたん%') OR (lower(artist) LIKE '%%きりたん%')) AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"((lower(artist) LIKE '%東北%きりたん%') OR (lower(artist) LIKE '%%きりたん%')) AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"((lower(artist) LIKE '%東北%きりたん%') OR (lower(artist) LIKE '%%きりたん%')) AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"((lower(artist) LIKE '%東北%きりたん%') OR (lower(artist) LIKE '%%きりたん%')) AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"結月ゆかり",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(artist) LIKE '%結月%ゆかり%'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(artist) LIKE '%結月%ゆかり%') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(artist) LIKE '%結月%ゆかり%') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(artist) LIKE '%結月%ゆかり%') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(artist) LIKE '%結月%ゆかり%') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(artist) LIKE '%結月%ゆかり%') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(artist) LIKE '%結月%ゆかり%') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(artist) LIKE '%結月%ゆかり%') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(artist) LIKE '%結月%ゆかり%') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(artist) LIKE '%結月%ゆかり%') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(artist) LIKE '%結月%ゆかり%') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(artist) LIKE '%結月%ゆかり%') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(artist) LIKE '%結月%ゆかり%') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(artist) LIKE '%結月%ゆかり%') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(artist) LIKE '%結月%ゆかり%') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"紲星あかり",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"lower(artist) LIKE '%紲星%あかり%'"
+				},
+				{
+					"name":"LEVEL ～0",
+					"sql":"(lower(artist) LIKE '%紲星%あかり%') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(lower(artist) LIKE '%紲星%あかり%') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(lower(artist) LIKE '%紲星%あかり%') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(lower(artist) LIKE '%紲星%あかり%') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(lower(artist) LIKE '%紲星%あかり%') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(lower(artist) LIKE '%紲星%あかり%') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(lower(artist) LIKE '%紲星%あかり%') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(lower(artist) LIKE '%紲星%あかり%') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(lower(artist) LIKE '%紲星%あかり%') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(lower(artist) LIKE '%紲星%あかり%') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(lower(artist) LIKE '%紲星%あかり%') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(lower(artist) LIKE '%紲星%あかり%') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(lower(artist) LIKE '%紲星%あかり%') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(lower(artist) LIKE '%紲星%あかり%') AND (level >= 13)"
 				}
 			]
 		}
