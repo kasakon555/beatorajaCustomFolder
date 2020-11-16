@@ -43,6 +43,11 @@
 					"sql":"(song.path LIKE '%THE BMS OF FIGHTERS XVI -NEO DYSTOPIA-%') AND (favorite & 2 != 0)"
 				},
 				{
+					"name":"INVISIBLE CHART",
+					"sql":"(song.path LIKE '%THE BMS OF FIGHTERS XVI -NEO DYSTOPIA-%') AND (favorite & 8 != 0)",
+					"showall" : true
+				}
+				{
 					"name":"LEVEL ～0",
 					"sql":"(song.path LIKE '%THE BMS OF FIGHTERS XVI -NEO DYSTOPIA-%') AND (level <= 0 OR level IS NULL)"
 				},
