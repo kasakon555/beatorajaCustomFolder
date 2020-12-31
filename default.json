@@ -2894,6 +2894,62 @@
 				{
 					"name":"LEVEL 13〜",
 					"sql":"level >= 13 AND song.mode = 7"
+				},
+				{
+					"name":"LEVEL 〜0 NOPLAY",
+					"sql":"(level <= 0 OR level IS NULL) AND song.mode = 7 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 1 NOPLAY",
+					"sql":"level = 1 AND song.mode = 7 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 2 NOPLAY",
+					"sql":"level = 2 AND song.mode = 7 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 3 NOPLAY",
+					"sql":"level = 3 AND song.mode = 7 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 4 NOPLAY",
+					"sql":"level = 4 AND song.mode = 7 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 5 NOPLAY",
+					"sql":"level = 5 AND song.mode = 7 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 6 NOPLAY",
+					"sql":"level = 6 AND song.mode = 7 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 7 NOPLAY",
+					"sql":"level = 7 AND song.mode = 7 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 8 NOPLAY",
+					"sql":"level = 8 AND song.mode = 7 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 9 NOPLAY",
+					"sql":"level = 9 AND song.mode = 7 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 10 NOPLAY",
+					"sql":"level = 10 AND song.mode = 7 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 11 NOPLAY",
+					"sql":"level = 11 AND song.mode = 7 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 12 NOPLAY",
+					"sql":"level = 12 AND song.mode = 7 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 13〜 NOPLAY",
+					"sql":"level >= 13 AND song.mode = 7 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
 				}
 			]
 		},
@@ -2955,6 +3011,62 @@
 				{
 					"name":"LEVEL 13〜",
 					"sql":"level >= 13 AND song.mode = 14"
+				},
+				{
+					"name":"LEVEL 〜0 NOPLAY",
+					"sql":"(level <= 0 OR level IS NULL) AND song.mode = 14 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 1 NOPLAY",
+					"sql":"level = 1 AND song.mode = 14 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 2 NOPLAY",
+					"sql":"level = 2 AND song.mode = 14 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 3 NOPLAY",
+					"sql":"level = 3 AND song.mode = 14 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 4 NOPLAY",
+					"sql":"level = 4 AND song.mode = 14 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 5 NOPLAY",
+					"sql":"level = 5 AND song.mode = 14 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 6 NOPLAY",
+					"sql":"level = 6 AND song.mode = 14 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 7 NOPLAY",
+					"sql":"level = 7 AND song.mode = 14 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 8 NOPLAY",
+					"sql":"level = 8 AND song.mode = 14 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 9 NOPLAY",
+					"sql":"level = 9 AND song.mode = 14 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 10 NOPLAY",
+					"sql":"level = 10 AND song.mode = 14 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 11 NOPLAY",
+					"sql":"level = 11 AND song.mode = 14 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 12 NOPLAY",
+					"sql":"level = 12 AND song.mode = 14 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 13〜 NOPLAY",
+					"sql":"level >= 13 AND song.mode = 14 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
 				}
 			]
 		},
@@ -3229,6 +3341,62 @@
 				{
 					"name":"LEVEL 13〜",
 					"sql":"level >= 13 AND song.mode = 5"
+				},
+				{
+					"name":"LEVEL 〜0 NOPLAY",
+					"sql":"(level <= 0 OR level IS NULL) AND song.mode = 5 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 1 NOPLAY",
+					"sql":"level = 1 AND song.mode = 5 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 2 NOPLAY",
+					"sql":"level = 2 AND song.mode = 5 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 3 NOPLAY",
+					"sql":"level = 3 AND song.mode = 5 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 4 NOPLAY",
+					"sql":"level = 4 AND song.mode = 5 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 5 NOPLAY",
+					"sql":"level = 5 AND song.mode = 5 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 6 NOPLAY",
+					"sql":"level = 6 AND song.mode = 5 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 7 NOPLAY",
+					"sql":"level = 7 AND song.mode = 5 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 8 NOPLAY",
+					"sql":"level = 8 AND song.mode = 5 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 9 NOPLAY",
+					"sql":"level = 9 AND song.mode = 5 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 10 NOPLAY",
+					"sql":"level = 10 AND song.mode = 5 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 11 NOPLAY",
+					"sql":"level = 11 AND song.mode = 5 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 12 NOPLAY",
+					"sql":"level = 12 AND song.mode = 5 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 13〜 NOPLAY",
+					"sql":"level >= 13 AND song.mode = 5 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
 				}
 			]
 		},
@@ -3290,6 +3458,62 @@
 				{
 					"name":"LEVEL 13〜",
 					"sql":"level >= 13 AND song.mode = 10"
+				},
+				{
+					"name":"LEVEL 〜0 NOPLAY",
+					"sql":"(level <= 0 OR level IS NULL) AND song.mode = 10 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 1 NOPLAY",
+					"sql":"level = 1 AND song.mode = 10 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 2 NOPLAY",
+					"sql":"level = 2 AND song.mode = 10 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 3 NOPLAY",
+					"sql":"level = 3 AND song.mode = 10 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 4 NOPLAY",
+					"sql":"level = 4 AND song.mode = 10 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 5 NOPLAY",
+					"sql":"level = 5 AND song.mode = 10 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 6 NOPLAY",
+					"sql":"level = 6 AND song.mode = 10 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 7 NOPLAY",
+					"sql":"level = 7 AND song.mode = 10 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 8 NOPLAY",
+					"sql":"level = 8 AND song.mode = 10 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 9 NOPLAY",
+					"sql":"level = 9 AND song.mode = 10 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 10 NOPLAY",
+					"sql":"level = 10 AND song.mode = 10 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 11 NOPLAY",
+					"sql":"level = 11 AND song.mode = 10 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 12 NOPLAY",
+					"sql":"level = 12 AND song.mode = 10 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
+				},
+				{
+					"name":"LEVEL 13〜 NOPLAY",
+					"sql":"level >= 13 AND song.mode = 10 AND NOT EXISTS ( select * from song where song.sha256 = score.sha256)"
 				}
 			]
 		},
