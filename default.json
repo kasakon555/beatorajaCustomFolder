@@ -16,6 +16,10 @@
 			"sql":"favorite & 2 != 0"
 		},
 		{
+			"name":"FAVORITE CHART PLAYED THIS MONTH",
+			"sql":"(favorite & 2 != 0) AND (strftime('%s', 'now') - adddate <= 86400*7*4)"
+		},
+		{
 			"name":"INVISIBLE SONG",
 			"sql":"favorite & 4 != 0",
 			"showall" : true
