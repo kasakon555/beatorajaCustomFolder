@@ -46,7 +46,7 @@
 					"name":"INVISIBLE CHART",
 					"sql":"(song.path LIKE '%THE BMS OF FIGHTERS XVI -NEO DYSTOPIA-%') AND (favorite & 8 != 0)",
 					"showall" : true
-				}
+				},
 				{
 					"name":"LEVEL ～0",
 					"sql":"(song.path LIKE '%THE BMS OF FIGHTERS XVI -NEO DYSTOPIA-%') AND (level <= 0 OR level IS NULL)"
@@ -232,6 +232,71 @@
 				{
 					"name":"LEVEL 13～",
 					"sql":"(song.path LIKE '%BOFXV%') AND (level >= 13)"
+				}
+			]
+		},
+		{
+			"name":"第三回BMS衆議院選",
+			"folder":[
+				{
+					"name":"ALL",
+					"sql":"song.path LIKE '%第三回BMS衆議院選%'"
+				},
+								{
+					"name":"LEVEL ～0",
+					"sql":"(song.path LIKE '%第三回BMS衆議院選%') AND (level <= 0 OR level IS NULL)"
+				},
+				{
+					"name":"LEVEL 1",
+					"sql":"(song.path LIKE '%第三回BMS衆議院選%') AND (level = 1)"
+				},
+				{
+					"name":"LEVEL 2",
+					"sql":"(song.path LIKE '%第三回BMS衆議院選%') AND (level = 2)"
+				},
+				{
+					"name":"LEVEL 3",
+					"sql":"(song.path LIKE '%第三回BMS衆議院選%') AND (level = 3)"
+				},
+				{
+					"name":"LEVEL 4",
+					"sql":"(song.path LIKE '%第三回BMS衆議院選%') AND (level = 4)"
+				},
+				{
+					"name":"LEVEL 5",
+					"sql":"(song.path LIKE '%第三回BMS衆議院選%') AND (level = 5)"
+				},
+				{
+					"name":"LEVEL 6",
+					"sql":"(song.path LIKE '%第三回BMS衆議院選%') AND (level = 6)"
+				},
+				{
+					"name":"LEVEL 7",
+					"sql":"(song.path LIKE '%第三回BMS衆議院選%') AND (level = 7)"
+				},
+				{
+					"name":"LEVEL 8",
+					"sql":"(song.path LIKE '%第三回BMS衆議院選%') AND (level = 8)"
+				},
+				{
+					"name":"LEVEL 9",
+					"sql":"(song.path LIKE '%第三回BMS衆議院選%') AND (level = 9)"
+				},
+				{
+					"name":"LEVEL 10",
+					"sql":"(song.path LIKE '%第三回BMS衆議院選%') AND (level = 10)"
+				},
+				{
+					"name":"LEVEL 11",
+					"sql":"(song.path LIKE '%第三回BMS衆議院選%') AND (level = 11)"
+				},
+				{
+					"name":"LEVEL 12",
+					"sql":"(song.path LIKE '%第三回BMS衆議院選%') AND (level = 12)"
+				},
+				{
+					"name":"LEVEL 13～",
+					"sql":"(song.path LIKE '%第三回BMS衆議院選%') AND (level >= 13)"
 				}
 			]
 		}
