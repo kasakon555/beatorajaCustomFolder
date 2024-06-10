@@ -779,6 +779,15 @@
 						"sql":"song.path LIKE '%BOFU2017%' AND score.clear is null"
 					},
 					{
+						"name":"FAVORITE CHART",
+						"sql":"(song.path LIKE '%BOFU2017%') AND (favorite & 2 != 0)"
+					},
+					{
+						"name":"INVISIBLE CHART",
+						"sql":"(song.path LIKE '%BOFU2017%') AND (favorite & 8 != 0)",
+						"showall" : true
+					},
+					{
 						"name":"LEVEL ～0",
 						"sql":"(song.path LIKE '%BOFU2017%') AND (level <= 0 OR level IS NULL)"
 					},
@@ -848,6 +857,15 @@
 						"sql":"song.path LIKE '%BOFXV%' AND score.clear is null"
 					},
 					{
+						"name":"FAVORITE CHART",
+						"sql":"(song.path LIKE '%BOFXV%') AND (favorite & 2 != 0)"
+					},
+					{
+						"name":"INVISIBLE CHART",
+						"sql":"(song.path LIKE '%BOFXV%') AND (favorite & 8 != 0)",
+						"showall" : true
+					},
+					{
 						"name":"LEVEL ～0",
 						"sql":"(song.path LIKE '%BOFXV%') AND (level <= 0 OR level IS NULL)"
 					},
@@ -906,6 +924,84 @@
 				]
 			},
 			{
+				"name":"THE BMS OF FIGHTERS ： NT -Twinkle Dream Traveler",
+				"folder":[
+					{
+						"name":"ALL",
+						"sql":"song.path LIKE '%THE BMS OF FIGHTERS ： NT -Twinkle Dream Traveler%'"
+					},
+					{
+						"name":"NOPLAY",
+						"sql":"song.path LIKE '%THE BMS OF FIGHTERS ： NT -Twinkle Dream Traveler%' AND score.clear is null"
+					},
+					{
+						"name":"FAVORITE CHART",
+						"sql":"(song.path LIKE '%THE BMS OF FIGHTERS ： NT -Twinkle Dream Traveler%') AND (favorite & 2 != 0)"
+					},
+					{
+						"name":"INVISIBLE CHART",
+						"sql":"(song.path LIKE '%THE BMS OF FIGHTERS ： NT -Twinkle Dream Traveler%') AND (favorite & 8 != 0)",
+						"showall" : true
+					},
+					{
+						"name":"LEVEL ～0",
+						"sql":"(song.path LIKE '%THE BMS OF FIGHTERS ： NT -Twinkle Dream Traveler%') AND (level <= 0 OR level IS NULL)"
+					},
+					{
+						"name":"LEVEL 1",
+						"sql":"(song.path LIKE '%THE BMS OF FIGHTERS ： NT -Twinkle Dream Traveler%') AND (level = 1)"
+					},
+					{
+						"name":"LEVEL 2",
+						"sql":"(song.path LIKE '%THE BMS OF FIGHTERS ： NT -Twinkle Dream Traveler%') AND (level = 2)"
+					},
+					{
+						"name":"LEVEL 3",
+						"sql":"(song.path LIKE '%THE BMS OF FIGHTERS ： NT -Twinkle Dream Traveler%') AND (level = 3)"
+					},
+					{
+						"name":"LEVEL 4",
+						"sql":"(song.path LIKE '%THE BMS OF FIGHTERS ： NT -Twinkle Dream Traveler%') AND (level = 4)"
+					},
+					{
+						"name":"LEVEL 5",
+						"sql":"(song.path LIKE '%THE BMS OF FIGHTERS ： NT -Twinkle Dream Traveler%') AND (level = 5)"
+					},
+					{
+						"name":"LEVEL 6",
+						"sql":"(song.path LIKE '%THE BMS OF FIGHTERS ： NT -Twinkle Dream Traveler%') AND (level = 6)"
+					},
+					{
+						"name":"LEVEL 7",
+						"sql":"(song.path LIKE '%THE BMS OF FIGHTERS ： NT -Twinkle Dream Traveler%') AND (level = 7)"
+					},
+					{
+						"name":"LEVEL 8",
+						"sql":"(song.path LIKE '%THE BMS OF FIGHTERS ： NT -Twinkle Dream Traveler%') AND (level = 8)"
+					},
+					{
+						"name":"LEVEL 9",
+						"sql":"(song.path LIKE '%THE BMS OF FIGHTERS ： NT -Twinkle Dream Traveler%') AND (level = 9)"
+					},
+					{
+						"name":"LEVEL 10",
+						"sql":"(song.path LIKE '%THE BMS OF FIGHTERS ： NT -Twinkle Dream Traveler%') AND (level = 10)"
+					},
+					{
+						"name":"LEVEL 11",
+						"sql":"(song.path LIKE '%THE BMS OF FIGHTERS ： NT -Twinkle Dream Traveler%') AND (level = 11)"
+					},
+					{
+						"name":"LEVEL 12",
+						"sql":"(song.path LIKE '%THE BMS OF FIGHTERS ： NT -Twinkle Dream Traveler%') AND (level = 12)"
+					},
+					{
+						"name":"LEVEL 13～",
+						"sql":"(song.path LIKE '%THE BMS OF FIGHTERS ： NT -Twinkle Dream Traveler%') AND (level >= 13)"
+					}
+				]
+			},
+			{
 				"name":"第三回BMS衆議院選",
 				"folder":[
 					{
@@ -915,6 +1011,15 @@
 					{
 						"name":"NOPLAY",
 						"sql":"song.path LIKE '%第三回BMS衆議院選%' AND score.clear is null"
+					},
+					{
+						"name":"FAVORITE CHART",
+						"sql":"(song.path LIKE '%第三回BMS衆議院選%') AND (favorite & 2 != 0)"
+					},
+					{
+						"name":"INVISIBLE CHART",
+						"sql":"(song.path LIKE '%第三回BMS衆議院選%') AND (favorite & 8 != 0)",
+						"showall" : true
 					},
 					{
 						"name":"LEVEL ～0",
@@ -971,6 +1076,474 @@
 					{
 						"name":"LEVEL 13～",
 						"sql":"(song.path LIKE '%第三回BMS衆議院選%') AND (level >= 13)"
+					}
+				]
+			},
+			{
+				"name":"MUMEI Academy 2023",
+				"folder":[
+					{
+						"name":"ALL",
+						"sql":"song.path LIKE '%MA_2023%'"
+					},
+					{
+						"name":"NOPLAY",
+						"sql":"song.path LIKE '%MA_2023%' AND score.clear is null"
+					},
+					{
+						"name":"FAVORITE CHART",
+						"sql":"(song.path LIKE '%MA_2023%') AND (favorite & 2 != 0)"
+					},
+					{
+						"name":"INVISIBLE CHART",
+						"sql":"(song.path LIKE '%MA_2023%') AND (favorite & 8 != 0)",
+						"showall" : true
+					},
+					{
+						"name":"LEVEL ～0",
+						"sql":"(song.path LIKE '%MA_2023%') AND (level <= 0 OR level IS NULL)"
+					},
+					{
+						"name":"LEVEL 1",
+						"sql":"(song.path LIKE '%MA_2023%') AND (level = 1)"
+					},
+					{
+						"name":"LEVEL 2",
+						"sql":"(song.path LIKE '%MA_2023%') AND (level = 2)"
+					},
+					{
+						"name":"LEVEL 3",
+						"sql":"(song.path LIKE '%MA_2023%') AND (level = 3)"
+					},
+					{
+						"name":"LEVEL 4",
+						"sql":"(song.path LIKE '%MA_2023%') AND (level = 4)"
+					},
+					{
+						"name":"LEVEL 5",
+						"sql":"(song.path LIKE '%MA_2023%') AND (level = 5)"
+					},
+					{
+						"name":"LEVEL 6",
+						"sql":"(song.path LIKE '%MA_2023%') AND (level = 6)"
+					},
+					{
+						"name":"LEVEL 7",
+						"sql":"(song.path LIKE '%MA_2023%') AND (level = 7)"
+					},
+					{
+						"name":"LEVEL 8",
+						"sql":"(song.path LIKE '%MA_2023%') AND (level = 8)"
+					},
+					{
+						"name":"LEVEL 9",
+						"sql":"(song.path LIKE '%MA_2023%') AND (level = 9)"
+					},
+					{
+						"name":"LEVEL 10",
+						"sql":"(song.path LIKE '%MA_2023%') AND (level = 10)"
+					},
+					{
+						"name":"LEVEL 11",
+						"sql":"(song.path LIKE '%MA_2023%') AND (level = 11)"
+					},
+					{
+						"name":"LEVEL 12",
+						"sql":"(song.path LIKE '%MA_2023%') AND (level = 12)"
+					},
+					{
+						"name":"LEVEL 13～",
+						"sql":"(song.path LIKE '%MA_2023%') AND (level >= 13)"
+					}
+				]
+			},
+			{
+				"name":"PABAT2024",
+				"folder":[
+					{
+						"name":"ALL",
+						"sql":"song.path LIKE '%PABAT2024%'"
+					},
+					{
+						"name":"NOPLAY",
+						"sql":"song.path LIKE '%PABAT2024%' AND score.clear is null"
+					},
+					{
+						"name":"FAVORITE CHART",
+						"sql":"(song.path LIKE '%PABAT2024%') AND (favorite & 2 != 0)"
+					},
+					{
+						"name":"INVISIBLE CHART",
+						"sql":"(song.path LIKE '%PABAT2024%') AND (favorite & 8 != 0)",
+						"showall" : true
+					},
+					{
+						"name":"LEVEL ～0",
+						"sql":"(song.path LIKE '%PABAT2024%') AND (level <= 0 OR level IS NULL)"
+					},
+					{
+						"name":"LEVEL 1",
+						"sql":"(song.path LIKE '%PABAT2024%') AND (level = 1)"
+					},
+					{
+						"name":"LEVEL 2",
+						"sql":"(song.path LIKE '%PABAT2024%') AND (level = 2)"
+					},
+					{
+						"name":"LEVEL 3",
+						"sql":"(song.path LIKE '%PABAT2024%') AND (level = 3)"
+					},
+					{
+						"name":"LEVEL 4",
+						"sql":"(song.path LIKE '%PABAT2024%') AND (level = 4)"
+					},
+					{
+						"name":"LEVEL 5",
+						"sql":"(song.path LIKE '%PABAT2024%') AND (level = 5)"
+					},
+					{
+						"name":"LEVEL 6",
+						"sql":"(song.path LIKE '%PABAT2024%') AND (level = 6)"
+					},
+					{
+						"name":"LEVEL 7",
+						"sql":"(song.path LIKE '%PABAT2024%') AND (level = 7)"
+					},
+					{
+						"name":"LEVEL 8",
+						"sql":"(song.path LIKE '%PABAT2024%') AND (level = 8)"
+					},
+					{
+						"name":"LEVEL 9",
+						"sql":"(song.path LIKE '%PABAT2024%') AND (level = 9)"
+					},
+					{
+						"name":"LEVEL 10",
+						"sql":"(song.path LIKE '%PABAT2024%') AND (level = 10)"
+					},
+					{
+						"name":"LEVEL 11",
+						"sql":"(song.path LIKE '%PABAT2024%') AND (level = 11)"
+					},
+					{
+						"name":"LEVEL 12",
+						"sql":"(song.path LIKE '%PABAT2024%') AND (level = 12)"
+					},
+					{
+						"name":"LEVEL 13～",
+						"sql":"(song.path LIKE '%PABAT2024%') AND (level >= 13)"
+					}
+				]
+			},
+			{
+				"name":"Genre_Shuffle_4",
+				"folder":[
+					{
+						"name":"ALL",
+						"sql":"song.path LIKE '%Genre_Shuffle_4%'"
+					},
+					{
+						"name":"NOPLAY",
+						"sql":"song.path LIKE '%Genre_Shuffle_4%' AND score.clear is null"
+					},
+					{
+						"name":"FAVORITE CHART",
+						"sql":"(song.path LIKE '%Genre_Shuffle_4%') AND (favorite & 2 != 0)"
+					},
+					{
+						"name":"INVISIBLE CHART",
+						"sql":"(song.path LIKE '%Genre_Shuffle_4%') AND (favorite & 8 != 0)",
+						"showall" : true
+					},
+					{
+						"name":"LEVEL ～0",
+						"sql":"(song.path LIKE '%Genre_Shuffle_4%') AND (level <= 0 OR level IS NULL)"
+					},
+					{
+						"name":"LEVEL 1",
+						"sql":"(song.path LIKE '%Genre_Shuffle_4%') AND (level = 1)"
+					},
+					{
+						"name":"LEVEL 2",
+						"sql":"(song.path LIKE '%Genre_Shuffle_4%') AND (level = 2)"
+					},
+					{
+						"name":"LEVEL 3",
+						"sql":"(song.path LIKE '%Genre_Shuffle_4%') AND (level = 3)"
+					},
+					{
+						"name":"LEVEL 4",
+						"sql":"(song.path LIKE '%Genre_Shuffle_4%') AND (level = 4)"
+					},
+					{
+						"name":"LEVEL 5",
+						"sql":"(song.path LIKE '%Genre_Shuffle_4%') AND (level = 5)"
+					},
+					{
+						"name":"LEVEL 6",
+						"sql":"(song.path LIKE '%Genre_Shuffle_4%') AND (level = 6)"
+					},
+					{
+						"name":"LEVEL 7",
+						"sql":"(song.path LIKE '%Genre_Shuffle_4%') AND (level = 7)"
+					},
+					{
+						"name":"LEVEL 8",
+						"sql":"(song.path LIKE '%Genre_Shuffle_4%') AND (level = 8)"
+					},
+					{
+						"name":"LEVEL 9",
+						"sql":"(song.path LIKE '%Genre_Shuffle_4%') AND (level = 9)"
+					},
+					{
+						"name":"LEVEL 10",
+						"sql":"(song.path LIKE '%Genre_Shuffle_4%') AND (level = 10)"
+					},
+					{
+						"name":"LEVEL 11",
+						"sql":"(song.path LIKE '%Genre_Shuffle_4%') AND (level = 11)"
+					},
+					{
+						"name":"LEVEL 12",
+						"sql":"(song.path LIKE '%Genre_Shuffle_4%') AND (level = 12)"
+					},
+					{
+						"name":"LEVEL 13～",
+						"sql":"(song.path LIKE '%Genre_Shuffle_4%') AND (level >= 13)"
+					}
+				]
+			},
+			{
+				"name":"BMS_Hanadayori",
+				"folder":[
+					{
+						"name":"ALL",
+						"sql":"song.path LIKE '%BMS_Hanadayori_240210%'"
+					},
+					{
+						"name":"NOPLAY",
+						"sql":"song.path LIKE '%BMS_Hanadayori_240210%' AND score.clear is null"
+					},
+					{
+						"name":"FAVORITE CHART",
+						"sql":"(song.path LIKE '%BMS_Hanadayori_240210%') AND (favorite & 2 != 0)"
+					},
+					{
+						"name":"INVISIBLE CHART",
+						"sql":"(song.path LIKE '%BMS_Hanadayori_240210%') AND (favorite & 8 != 0)",
+						"showall" : true
+					},
+					{
+						"name":"LEVEL ～0",
+						"sql":"(song.path LIKE '%BMS_Hanadayori_240210%') AND (level <= 0 OR level IS NULL)"
+					},
+					{
+						"name":"LEVEL 1",
+						"sql":"(song.path LIKE '%BMS_Hanadayori_240210%') AND (level = 1)"
+					},
+					{
+						"name":"LEVEL 2",
+						"sql":"(song.path LIKE '%BMS_Hanadayori_240210%') AND (level = 2)"
+					},
+					{
+						"name":"LEVEL 3",
+						"sql":"(song.path LIKE '%BMS_Hanadayori_240210%') AND (level = 3)"
+					},
+					{
+						"name":"LEVEL 4",
+						"sql":"(song.path LIKE '%BMS_Hanadayori_240210%') AND (level = 4)"
+					},
+					{
+						"name":"LEVEL 5",
+						"sql":"(song.path LIKE '%BMS_Hanadayori_240210%') AND (level = 5)"
+					},
+					{
+						"name":"LEVEL 6",
+						"sql":"(song.path LIKE '%BMS_Hanadayori_240210%') AND (level = 6)"
+					},
+					{
+						"name":"LEVEL 7",
+						"sql":"(song.path LIKE '%BMS_Hanadayori_240210%') AND (level = 7)"
+					},
+					{
+						"name":"LEVEL 8",
+						"sql":"(song.path LIKE '%BMS_Hanadayori_240210%') AND (level = 8)"
+					},
+					{
+						"name":"LEVEL 9",
+						"sql":"(song.path LIKE '%BMS_Hanadayori_240210%') AND (level = 9)"
+					},
+					{
+						"name":"LEVEL 10",
+						"sql":"(song.path LIKE '%BMS_Hanadayori_240210%') AND (level = 10)"
+					},
+					{
+						"name":"LEVEL 11",
+						"sql":"(song.path LIKE '%BMS_Hanadayori_240210%') AND (level = 11)"
+					},
+					{
+						"name":"LEVEL 12",
+						"sql":"(song.path LIKE '%BMS_Hanadayori_240210%') AND (level = 12)"
+					},
+					{
+						"name":"LEVEL 13～",
+						"sql":"(song.path LIKE '%BMS_Hanadayori_240210%') AND (level >= 13)"
+					}
+				]
+			},
+			{
+				"name":"BMSをたくさん作るぜ'24",
+				"folder":[
+					{
+						"name":"ALL",
+						"sql":"song.path LIKE '%BMS%たくさん%24%'"
+					},
+					{
+						"name":"NOPLAY",
+						"sql":"song.path LIKE '%BMS%たくさん%24%' AND score.clear is null"
+					},
+					{
+						"name":"FAVORITE CHART",
+						"sql":"(song.path LIKE '%BMS%たくさん%24%') AND (favorite & 2 != 0)"
+					},
+					{
+						"name":"INVISIBLE CHART",
+						"sql":"(song.path LIKE '%BMS%たくさん%24%') AND (favorite & 8 != 0)",
+						"showall" : true
+					},
+					{
+						"name":"LEVEL ～0",
+						"sql":"(song.path LIKE '%BMS%たくさん%24%') AND (level <= 0 OR level IS NULL)"
+					},
+					{
+						"name":"LEVEL 1",
+						"sql":"(song.path LIKE '%BMS%たくさん%24%') AND (level = 1)"
+					},
+					{
+						"name":"LEVEL 2",
+						"sql":"(song.path LIKE '%BMS%たくさん%24%') AND (level = 2)"
+					},
+					{
+						"name":"LEVEL 3",
+						"sql":"(song.path LIKE '%BMS%たくさん%24%') AND (level = 3)"
+					},
+					{
+						"name":"LEVEL 4",
+						"sql":"(song.path LIKE '%BMS%たくさん%24%') AND (level = 4)"
+					},
+					{
+						"name":"LEVEL 5",
+						"sql":"(song.path LIKE '%BMS%たくさん%24%') AND (level = 5)"
+					},
+					{
+						"name":"LEVEL 6",
+						"sql":"(song.path LIKE '%BMS%たくさん%24%') AND (level = 6)"
+					},
+					{
+						"name":"LEVEL 7",
+						"sql":"(song.path LIKE '%BMS%たくさん%24%') AND (level = 7)"
+					},
+					{
+						"name":"LEVEL 8",
+						"sql":"(song.path LIKE '%BMS%たくさん%24%') AND (level = 8)"
+					},
+					{
+						"name":"LEVEL 9",
+						"sql":"(song.path LIKE '%BMS%たくさん%24%') AND (level = 9)"
+					},
+					{
+						"name":"LEVEL 10",
+						"sql":"(song.path LIKE '%BMS%たくさん%24%') AND (level = 10)"
+					},
+					{
+						"name":"LEVEL 11",
+						"sql":"(song.path LIKE '%BMS%たくさん%24%') AND (level = 11)"
+					},
+					{
+						"name":"LEVEL 12",
+						"sql":"(song.path LIKE '%BMS%たくさん%24%') AND (level = 12)"
+					},
+					{
+						"name":"LEVEL 13～",
+						"sql":"(song.path LIKE '%BMS%たくさん%24%') AND (level >= 13)"
+					}
+				]
+			},
+			{
+				"name":"2024無名戦_A-1",
+				"folder":[
+					{
+						"name":"ALL",
+						"sql":"song.path LIKE '%2024無名戦_A-1%'"
+					},
+					{
+						"name":"NOPLAY",
+						"sql":"song.path LIKE '%2024無名戦_A-1%' AND score.clear is null"
+					},
+					{
+						"name":"FAVORITE CHART",
+						"sql":"(song.path LIKE '%2024無名戦_A-1%') AND (favorite & 2 != 0)"
+					},
+					{
+						"name":"INVISIBLE CHART",
+						"sql":"(song.path LIKE '%2024無名戦_A-1%') AND (favorite & 8 != 0)",
+						"showall" : true
+					},
+					{
+						"name":"LEVEL ～0",
+						"sql":"(song.path LIKE '%2024無名戦_A-1%') AND (level <= 0 OR level IS NULL)"
+					},
+					{
+						"name":"LEVEL 1",
+						"sql":"(song.path LIKE '%2024無名戦_A-1%') AND (level = 1)"
+					},
+					{
+						"name":"LEVEL 2",
+						"sql":"(song.path LIKE '%2024無名戦_A-1%') AND (level = 2)"
+					},
+					{
+						"name":"LEVEL 3",
+						"sql":"(song.path LIKE '%2024無名戦_A-1%') AND (level = 3)"
+					},
+					{
+						"name":"LEVEL 4",
+						"sql":"(song.path LIKE '%2024無名戦_A-1%') AND (level = 4)"
+					},
+					{
+						"name":"LEVEL 5",
+						"sql":"(song.path LIKE '%2024無名戦_A-1%') AND (level = 5)"
+					},
+					{
+						"name":"LEVEL 6",
+						"sql":"(song.path LIKE '%2024無名戦_A-1%') AND (level = 6)"
+					},
+					{
+						"name":"LEVEL 7",
+						"sql":"(song.path LIKE '%2024無名戦_A-1%') AND (level = 7)"
+					},
+					{
+						"name":"LEVEL 8",
+						"sql":"(song.path LIKE '%2024無名戦_A-1%') AND (level = 8)"
+					},
+					{
+						"name":"LEVEL 9",
+						"sql":"(song.path LIKE '%2024無名戦_A-1%') AND (level = 9)"
+					},
+					{
+						"name":"LEVEL 10",
+						"sql":"(song.path LIKE '%2024無名戦_A-1%') AND (level = 10)"
+					},
+					{
+						"name":"LEVEL 11",
+						"sql":"(song.path LIKE '%2024無名戦_A-1%') AND (level = 11)"
+					},
+					{
+						"name":"LEVEL 12",
+						"sql":"(song.path LIKE '%2024無名戦_A-1%') AND (level = 12)"
+					},
+					{
+						"name":"LEVEL 13～",
+						"sql":"(song.path LIKE '%2024無名戦_A-1%') AND (level >= 13)"
 					}
 				]
 			}
@@ -2161,119 +2734,119 @@
 				"folder":[
 					{
 						"name":"ALL",
-						"sql":"lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%'"
+						"sql":"lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%'"
 					},
 					{
 						"name":"LEVEL ～0",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level <= 0 OR level IS NULL)"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level <= 0 OR level IS NULL)"
 					},
 					{
 						"name":"LEVEL 1",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 1)"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 1)"
 					},
 					{
 						"name":"LEVEL 2",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 2)"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 2)"
 					},
 					{
 						"name":"LEVEL 3",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 3)"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 3)"
 					},
 					{
 						"name":"LEVEL 4",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 4)"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 4)"
 					},
 					{
 						"name":"LEVEL 5",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 5)"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 5)"
 					},
 					{
 						"name":"LEVEL 6",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 6)"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 6)"
 					},
 					{
 						"name":"LEVEL 7",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 7)"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 7)"
 					},
 					{
 						"name":"LEVEL 8",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 8)"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 8)"
 					},
 					{
 						"name":"LEVEL 9",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 9)"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 9)"
 					},
 					{
 						"name":"LEVEL 10",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 10)"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 10)"
 					},
 					{
 						"name":"LEVEL 11",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 11)"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 11)"
 					},
 					{
 						"name":"LEVEL 12",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 12)"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 12)"
 					},
 					{
 						"name":"LEVEL 13～",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level >= 13)"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level >= 13)"
 					},
 					{
 						"name":"LEVEL ～0",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 1 NOPLAY",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 1) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 1) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 2 NOPLAY",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 2) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 2) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 3 NOPLAY",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 3) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 3) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 4 NOPLAY",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 4) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 4) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 5 NOPLAY",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 5) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 5) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 6 NOPLAY",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 6) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 6) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 7 NOPLAY",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 7) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 7) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 8 NOPLAY",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 8) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 8) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 9 NOPLAY",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 9) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 9) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 10 NOPLAY",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 10) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 10) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 11 NOPLAY",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 11) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 11) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 12 NOPLAY",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level = 12) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level = 12) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 13～ NOPLAY",
-						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE  '%テクノ%') AND (level >= 13) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%techno%' or lower(genre) LIKE '%テクノ%') AND (level >= 13) AND score.clear is null"
 					}
 				]
 			},
@@ -2887,119 +3460,119 @@
 				"folder":[
 					{
 						"name":"ALL",
-						"sql":"lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%'"
+						"sql":"lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%'"
 					},
 					{
 						"name":"LEVEL ～0",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level <= 0 OR level IS NULL)"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level <= 0 OR level IS NULL)"
 					},
 					{
 						"name":"LEVEL 1",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 1)"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 1)"
 					},
 					{
 						"name":"LEVEL 2",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 2)"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 2)"
 					},
 					{
 						"name":"LEVEL 3",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 3)"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 3)"
 					},
 					{
 						"name":"LEVEL 4",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 4)"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 4)"
 					},
 					{
 						"name":"LEVEL 5",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 5)"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 5)"
 					},
 					{
 						"name":"LEVEL 6",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 6)"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 6)"
 					},
 					{
 						"name":"LEVEL 7",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 7)"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 7)"
 					},
 					{
 						"name":"LEVEL 8",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 8)"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 8)"
 					},
 					{
 						"name":"LEVEL 9",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 9)"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 9)"
 					},
 					{
 						"name":"LEVEL 10",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 10)"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 10)"
 					},
 					{
 						"name":"LEVEL 11",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 11)"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 11)"
 					},
 					{
 						"name":"LEVEL 12",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 12)"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 12)"
 					},
 					{
 						"name":"LEVEL 13～",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level >= 13)"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level >= 13)"
 					},
 					{
 						"name":"LEVEL ～0 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 1 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 1) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 1) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 2 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 2) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 2) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 3 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 3) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 3) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 4 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 4) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 4) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 5 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 5) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 5) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 6 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 6) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 6) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 7 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 7) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 7) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 8 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 8) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 8) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 9 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 9) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 9) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 10 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 10) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 10) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 11 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 11) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 11) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 12 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level = 12) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level = 12) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 13～ NOPLAY",
-						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE  '%ロック%') AND (level >= 13) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rock%' or lower(genre) LIKE '%ロック%') AND (level >= 13) AND score.clear is null"
 					}
 				]
 			},
@@ -3008,119 +3581,119 @@
 				"folder":[
 					{
 						"name":"ALL",
-						"sql":"lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%'"
+						"sql":"lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%'"
 					},
 					{
 						"name":"LEVEL ～0",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level <= 0 OR level IS NULL)"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level <= 0 OR level IS NULL)"
 					},
 					{
 						"name":"LEVEL 1",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 1)"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 1)"
 					},
 					{
 						"name":"LEVEL 2",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 2)"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 2)"
 					},
 					{
 						"name":"LEVEL 3",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 3)"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 3)"
 					},
 					{
 						"name":"LEVEL 4",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 4)"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 4)"
 					},
 					{
 						"name":"LEVEL 5",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 5)"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 5)"
 					},
 					{
 						"name":"LEVEL 6",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 6)"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 6)"
 					},
 					{
 						"name":"LEVEL 7",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 7)"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 7)"
 					},
 					{
 						"name":"LEVEL 8",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 8)"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 8)"
 					},
 					{
 						"name":"LEVEL 9",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 9)"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 9)"
 					},
 					{
 						"name":"LEVEL 10",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 10)"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 10)"
 					},
 					{
 						"name":"LEVEL 11",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 11)"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 11)"
 					},
 					{
 						"name":"LEVEL 12",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 12)"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 12)"
 					},
 					{
 						"name":"LEVEL 13～",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level >= 13)"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level >= 13)"
 					},
 					{
 						"name":"LEVEL ～0 NOPLAY",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 1 NOPLAY",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 1) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 1) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 2 NOPLAY",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 2) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 2) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 3 NOPLAY",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 3) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 3) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 4 NOPLAY",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 4) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 4) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 5 NOPLAY",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 5) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 5) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 6 NOPLAY",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 6) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 6) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 7 NOPLAY",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 7) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 7) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 8 NOPLAY",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 8) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 8) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 9 NOPLAY",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 9) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 9) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 10 NOPLAY",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 10) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 10) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 11 NOPLAY",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 11) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 11) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 12 NOPLAY",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level = 12) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level = 12) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 13～ NOPLAY",
-						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE  '%スウィング%') AND (level >= 13) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%swing%' or lower(genre) LIKE '%スウィング%') AND (level >= 13) AND score.clear is null"
 					}
 				]
 			},
@@ -3129,119 +3702,119 @@
 				"folder":[
 					{
 						"name":"ALL",
-						"sql":"lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%'"
+						"sql":"lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%'"
 					},
 					{
 						"name":"LEVEL ～0",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level <= 0 OR level IS NULL)"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level <= 0 OR level IS NULL)"
 					},
 					{
 						"name":"LEVEL 1",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 1)"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 1)"
 					},
 					{
 						"name":"LEVEL 2",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 2)"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 2)"
 					},
 					{
 						"name":"LEVEL 3",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 3)"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 3)"
 					},
 					{
 						"name":"LEVEL 4",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 4)"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 4)"
 					},
 					{
 						"name":"LEVEL 5",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 5)"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 5)"
 					},
 					{
 						"name":"LEVEL 6",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 6)"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 6)"
 					},
 					{
 						"name":"LEVEL 7",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 7)"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 7)"
 					},
 					{
 						"name":"LEVEL 8",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 8)"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 8)"
 					},
 					{
 						"name":"LEVEL 9",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 9)"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 9)"
 					},
 					{
 						"name":"LEVEL 10",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 10)"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 10)"
 					},
 					{
 						"name":"LEVEL 11",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 11)"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 11)"
 					},
 					{
 						"name":"LEVEL 12",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 12)"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 12)"
 					},
 					{
 						"name":"LEVEL 13～",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level >= 13)"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level >= 13)"
 					},
 					{
 						"name":"LEVEL ～0 NOPLAY",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 1 NOPLAY",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 1) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 1) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 2 NOPLAY",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 2) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 2) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 3 NOPLAY",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 3) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 3) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 4 NOPLAY",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 4) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 4) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 5 NOPLAY",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 5) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 5) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 6 NOPLAY",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 6) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 6) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 7 NOPLAY",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 7) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 7) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 8 NOPLAY",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 8) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 8) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 9 NOPLAY",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 9) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 9) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 10 NOPLAY",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 10) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 10) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 11 NOPLAY",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 11) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 11) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 12 NOPLAY",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level = 12) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level = 12) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 13～ NOPLAY",
-						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE  '%ファンコット%' or lower(genre) LIKE  '%ファンキーコタ%') AND (level >= 13) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%funkot%' or lower(genre) LIKE '%ファンコット%' or lower(genre) LIKE '%ファンキーコタ%') AND (level >= 13) AND score.clear is null"
 					}
 				]
 			},
@@ -3250,119 +3823,119 @@
 				"folder":[
 					{
 						"name":"ALL",
-						"sql":"lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%'"
+						"sql":"lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%'"
 					},
 					{
 						"name":"LEVEL ～0",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level <= 0 OR level IS NULL)"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level <= 0 OR level IS NULL)"
 					},
 					{
 						"name":"LEVEL 1",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 1)"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 1)"
 					},
 					{
 						"name":"LEVEL 2",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 2)"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 2)"
 					},
 					{
 						"name":"LEVEL 3",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 3)"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 3)"
 					},
 					{
 						"name":"LEVEL 4",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 4)"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 4)"
 					},
 					{
 						"name":"LEVEL 5",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 5)"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 5)"
 					},
 					{
 						"name":"LEVEL 6",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 6)"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 6)"
 					},
 					{
 						"name":"LEVEL 7",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 7)"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 7)"
 					},
 					{
 						"name":"LEVEL 8",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 8)"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 8)"
 					},
 					{
 						"name":"LEVEL 9",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 9)"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 9)"
 					},
 					{
 						"name":"LEVEL 10",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 10)"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 10)"
 					},
 					{
 						"name":"LEVEL 11",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 11)"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 11)"
 					},
 					{
 						"name":"LEVEL 12",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 12)"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 12)"
 					},
 					{
 						"name":"LEVEL 13～",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level >= 13)"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level >= 13)"
 					},
 					{
 						"name":"LEVEL ～0 NOPLAY",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 1 NOPLAY",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 1) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 1) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 2 NOPLAY",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 2) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 2) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 3 NOPLAY",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 3) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 3) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 4 NOPLAY",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 4) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 4) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 5 NOPLAY",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 5) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 5) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 6 NOPLAY",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 6) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 6) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 7 NOPLAY",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 7) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 7) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 8 NOPLAY",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 8) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 8) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 9 NOPLAY",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 9) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 9) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 10 NOPLAY",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 10) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 10) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 11 NOPLAY",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 11) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 11) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 12 NOPLAY",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level = 12) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level = 12) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 13～ NOPLAY",
-						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE  '%フュージョン%') AND (level >= 13) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%fusion%' or lower(genre) LIKE '%フュージョン%') AND (level >= 13) AND score.clear is null"
 					}
 				]
 			},
@@ -3371,119 +3944,119 @@
 				"folder":[
 					{
 						"name":"ALL",
-						"sql":"lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%'"
+						"sql":"lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%'"
 					},
 					{
 						"name":"LEVEL ～0",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level <= 0 OR level IS NULL)"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level <= 0 OR level IS NULL)"
 					},
 					{
 						"name":"LEVEL 1",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 1)"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 1)"
 					},
 					{
 						"name":"LEVEL 2",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 2)"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 2)"
 					},
 					{
 						"name":"LEVEL 3",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 3)"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 3)"
 					},
 					{
 						"name":"LEVEL 4",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 4)"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 4)"
 					},
 					{
 						"name":"LEVEL 5",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 5)"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 5)"
 					},
 					{
 						"name":"LEVEL 6",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 6)"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 6)"
 					},
 					{
 						"name":"LEVEL 7",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 7)"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 7)"
 					},
 					{
 						"name":"LEVEL 8",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 8)"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 8)"
 					},
 					{
 						"name":"LEVEL 9",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 9)"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 9)"
 					},
 					{
 						"name":"LEVEL 10",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 10)"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 10)"
 					},
 					{
 						"name":"LEVEL 11",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 11)"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 11)"
 					},
 					{
 						"name":"LEVEL 12",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 12)"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 12)"
 					},
 					{
 						"name":"LEVEL 13～",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level >= 13)"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level >= 13)"
 					},
 					{
 						"name":"LEVEL ～0 NOPLAY",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 1 NOPLAY",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 1) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 1) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 2 NOPLAY",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 2) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 2) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 3 NOPLAY",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 3) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 3) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 4 NOPLAY",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 4) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 4) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 5 NOPLAY",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 5) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 5) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 6 NOPLAY",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 6) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 6) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 7 NOPLAY",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 7) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 7) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 8 NOPLAY",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 8) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 8) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 9 NOPLAY",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 9) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 9) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 10 NOPLAY",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 10) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 10) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 11 NOPLAY",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 11) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 11) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 12 NOPLAY",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level = 12) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level = 12) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 13～ NOPLAY",
-						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE  '%ジャズ%') AND (level >= 13) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%jazz%' or lower(genre) LIKE '%ジャズ%') AND (level >= 13) AND score.clear is null"
 					}
 				]
 			},
@@ -3492,119 +4065,119 @@
 				"folder":[
 					{
 						"name":"ALL",
-						"sql":"lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%'"
+						"sql":"lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%'"
 					},
 					{
 						"name":"LEVEL ～0",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level <= 0 OR level IS NULL)"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level <= 0 OR level IS NULL)"
 					},
 					{
 						"name":"LEVEL 1",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 1)"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 1)"
 					},
 					{
 						"name":"LEVEL 2",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 2)"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 2)"
 					},
 					{
 						"name":"LEVEL 3",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 3)"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 3)"
 					},
 					{
 						"name":"LEVEL 4",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 4)"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 4)"
 					},
 					{
 						"name":"LEVEL 5",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 5)"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 5)"
 					},
 					{
 						"name":"LEVEL 6",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 6)"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 6)"
 					},
 					{
 						"name":"LEVEL 7",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 7)"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 7)"
 					},
 					{
 						"name":"LEVEL 8",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 8)"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 8)"
 					},
 					{
 						"name":"LEVEL 9",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 9)"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 9)"
 					},
 					{
 						"name":"LEVEL 10",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 10)"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 10)"
 					},
 					{
 						"name":"LEVEL 11",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 11)"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 11)"
 					},
 					{
 						"name":"LEVEL 12",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 12)"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 12)"
 					},
 					{
 						"name":"LEVEL 13～",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level >= 13)"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level >= 13)"
 					},
 					{
 						"name":"LEVEL ～0 NOPLAY",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 1 NOPLAY",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 1) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 1) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 2 NOPLAY",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 2) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 2) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 3 NOPLAY",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 3) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 3) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 4 NOPLAY",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 4) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 4) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 5 NOPLAY",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 5) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 5) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 6 NOPLAY",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 6) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 6) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 7 NOPLAY",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 7) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 7) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 8 NOPLAY",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 8) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 8) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 9 NOPLAY",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 9) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 9) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 10 NOPLAY",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 10) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 10) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 11 NOPLAY",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 11) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 11) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 12 NOPLAY",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level = 12) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level = 12) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 13～ NOPLAY",
-						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE  '%アニメ%') AND (level >= 13) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%anime%' or lower(genre) LIKE '%アニメ%') AND (level >= 13) AND score.clear is null"
 					}
 				]
 			},
@@ -3613,119 +4186,240 @@
 				"folder":[
 					{
 						"name":"ALL",
-						"sql":"lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%'"
+						"sql":"lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%'"
 					},
 					{
 						"name":"LEVEL ～0",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level <= 0 OR level IS NULL)"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level <= 0 OR level IS NULL)"
 					},
 					{
 						"name":"LEVEL 1",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 1)"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 1)"
 					},
 					{
 						"name":"LEVEL 2",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 2)"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 2)"
 					},
 					{
 						"name":"LEVEL 3",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 3)"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 3)"
 					},
 					{
 						"name":"LEVEL 4",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 4)"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 4)"
 					},
 					{
 						"name":"LEVEL 5",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 5)"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 5)"
 					},
 					{
 						"name":"LEVEL 6",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 6)"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 6)"
 					},
 					{
 						"name":"LEVEL 7",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 7)"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 7)"
 					},
 					{
 						"name":"LEVEL 8",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 8)"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 8)"
 					},
 					{
 						"name":"LEVEL 9",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 9)"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 9)"
 					},
 					{
 						"name":"LEVEL 10",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 10)"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 10)"
 					},
 					{
 						"name":"LEVEL 11",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 11)"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 11)"
 					},
 					{
 						"name":"LEVEL 12",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 12)"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 12)"
 					},
 					{
 						"name":"LEVEL 13～",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level >= 13)"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level >= 13)"
 					},
 					{
 						"name":"LEVEL ～0 NOPLAY",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 1 NOPLAY",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 1) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 1) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 2 NOPLAY",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 2) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 2) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 3 NOPLAY",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 3) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 3) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 4 NOPLAY",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 4) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 4) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 5 NOPLAY",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 5) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 5) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 6 NOPLAY",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 6) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 6) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 7 NOPLAY",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 7) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 7) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 8 NOPLAY",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 8) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 8) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 9 NOPLAY",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 9) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 9) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 10 NOPLAY",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 10) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 10) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 11 NOPLAY",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 11) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 11) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 12 NOPLAY",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level = 12) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level = 12) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 13～ NOPLAY",
-						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE  '%ハウス%') AND (level >= 13) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%house%' or lower(genre) LIKE '%ハウス%') AND (level >= 13) AND score.clear is null"
+					}
+				]
+			},
+			{
+				"name":"TRIVAL",
+				"folder":[
+					{
+						"name":"ALL",
+						"sql":"lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%'"
+					},
+					{
+						"name":"LEVEL ～0",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level <= 0 OR level IS NULL)"
+					},
+					{
+						"name":"LEVEL 1",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 1)"
+					},
+					{
+						"name":"LEVEL 2",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 2)"
+					},
+					{
+						"name":"LEVEL 3",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 3)"
+					},
+					{
+						"name":"LEVEL 4",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 4)"
+					},
+					{
+						"name":"LEVEL 5",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 5)"
+					},
+					{
+						"name":"LEVEL 6",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 6)"
+					},
+					{
+						"name":"LEVEL 7",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 7)"
+					},
+					{
+						"name":"LEVEL 8",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 8)"
+					},
+					{
+						"name":"LEVEL 9",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 9)"
+					},
+					{
+						"name":"LEVEL 10",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 10)"
+					},
+					{
+						"name":"LEVEL 11",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 11)"
+					},
+					{
+						"name":"LEVEL 12",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 12)"
+					},
+					{
+						"name":"LEVEL 13～",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level >= 13)"
+					},
+					{
+						"name":"LEVEL ～0 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 1 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 1) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 2 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 2) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 3 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 3) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 4 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 4) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 5 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 5) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 6 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 6) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 7 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 7) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 8 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 8) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 9 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 9) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 10 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 10) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 11 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 11) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 12 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level = 12) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 13～ NOPLAY",
+						"sql":"(lower(genre) LIKE '%TRIVAL%' or lower(genre) LIKE '%トライバル%') AND (level >= 13) AND score.clear is null"
 					}
 				]
 			},
@@ -3734,119 +4428,119 @@
 				"folder":[
 					{
 						"name":"ALL",
-						"sql":"lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%'"
+						"sql":"lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%'"
 					},
 					{
 						"name":"LEVEL ～0",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level <= 0 OR level IS NULL)"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level <= 0 OR level IS NULL)"
 					},
 					{
 						"name":"LEVEL 1",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 1)"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 1)"
 					},
 					{
 						"name":"LEVEL 2",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 2)"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 2)"
 					},
 					{
 						"name":"LEVEL 3",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 3)"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 3)"
 					},
 					{
 						"name":"LEVEL 4",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 4)"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 4)"
 					},
 					{
 						"name":"LEVEL 5",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 5)"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 5)"
 					},
 					{
 						"name":"LEVEL 6",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 6)"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 6)"
 					},
 					{
 						"name":"LEVEL 7",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 7)"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 7)"
 					},
 					{
 						"name":"LEVEL 8",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 8)"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 8)"
 					},
 					{
 						"name":"LEVEL 9",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 9)"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 9)"
 					},
 					{
 						"name":"LEVEL 10",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 10)"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 10)"
 					},
 					{
 						"name":"LEVEL 11",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 11)"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 11)"
 					},
 					{
 						"name":"LEVEL 12",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 12)"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 12)"
 					},
 					{
 						"name":"LEVEL 13～",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level >= 13)"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level >= 13)"
 					},
 					{
 						"name":"LEVEL ～0 NOPLAY",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 1 NOPLAY",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 1) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 1) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 2 NOPLAY",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 2) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 2) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 3 NOPLAY",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 3) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 3) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 4 NOPLAY",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 4) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 4) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 5 NOPLAY",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 5) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 5) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 6 NOPLAY",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 6) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 6) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 7 NOPLAY",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 7) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 7) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 8 NOPLAY",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 8) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 8) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 9 NOPLAY",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 9) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 9) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 10 NOPLAY",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 10) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 10) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 11 NOPLAY",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 11) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 11) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 12 NOPLAY",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level = 12) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level = 12) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 13～ NOPLAY",
-						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE  '%シュランツ%') AND (level >= 13) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%schranz%' or lower(genre) LIKE '%シュランツ%') AND (level >= 13) AND score.clear is null"
 					}
 				]
 			},
@@ -3855,119 +4549,119 @@
 				"folder":[
 					{
 						"name":"ALL",
-						"sql":"lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%'"
+						"sql":"lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%'"
 					},
 					{
 						"name":"LEVEL ～0",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level <= 0 OR level IS NULL)"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level <= 0 OR level IS NULL)"
 					},
 					{
 						"name":"LEVEL 1",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 1)"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 1)"
 					},
 					{
 						"name":"LEVEL 2",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 2)"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 2)"
 					},
 					{
 						"name":"LEVEL 3",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 3)"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 3)"
 					},
 					{
 						"name":"LEVEL 4",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 4)"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 4)"
 					},
 					{
 						"name":"LEVEL 5",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 5)"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 5)"
 					},
 					{
 						"name":"LEVEL 6",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 6)"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 6)"
 					},
 					{
 						"name":"LEVEL 7",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 7)"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 7)"
 					},
 					{
 						"name":"LEVEL 8",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 8)"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 8)"
 					},
 					{
 						"name":"LEVEL 9",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 9)"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 9)"
 					},
 					{
 						"name":"LEVEL 10",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 10)"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 10)"
 					},
 					{
 						"name":"LEVEL 11",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 11)"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 11)"
 					},
 					{
 						"name":"LEVEL 12",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 12)"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 12)"
 					},
 					{
 						"name":"LEVEL 13～",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level >= 13)"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level >= 13)"
 					},
 					{
 						"name":"LEVEL ～0 NOPLAY",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 1 NOPLAY",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 1) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 1) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 2 NOPLAY",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 2) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 2) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 3 NOPLAY",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 3) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 3) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 4 NOPLAY",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 4) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 4) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 5 NOPLAY",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 5) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 5) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 6 NOPLAY",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 6) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 6) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 7 NOPLAY",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 7) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 7) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 8 NOPLAY",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 8) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 8) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 9 NOPLAY",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 9) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 9) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 10 NOPLAY",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 10) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 10) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 11 NOPLAY",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 11) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 11) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 12 NOPLAY",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level = 12) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level = 12) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 13～ NOPLAY",
-						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE  '%ビッグ%ビート%') AND (level >= 13) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%big%beat%' or lower(genre) LIKE '%ビッグ%ビート%') AND (level >= 13) AND score.clear is null"
 					}
 				]
 			},
@@ -3976,119 +4670,119 @@
 				"folder":[
 					{
 						"name":"ALL",
-						"sql":"lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%'"
+						"sql":"lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%'"
 					},
 					{
 						"name":"LEVEL ～0",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level <= 0 OR level IS NULL)"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level <= 0 OR level IS NULL)"
 					},
 					{
 						"name":"LEVEL 1",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 1)"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 1)"
 					},
 					{
 						"name":"LEVEL 2",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 2)"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 2)"
 					},
 					{
 						"name":"LEVEL 3",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 3)"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 3)"
 					},
 					{
 						"name":"LEVEL 4",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 4)"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 4)"
 					},
 					{
 						"name":"LEVEL 5",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 5)"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 5)"
 					},
 					{
 						"name":"LEVEL 6",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 6)"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 6)"
 					},
 					{
 						"name":"LEVEL 7",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 7)"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 7)"
 					},
 					{
 						"name":"LEVEL 8",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 8)"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 8)"
 					},
 					{
 						"name":"LEVEL 9",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 9)"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 9)"
 					},
 					{
 						"name":"LEVEL 10",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 10)"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 10)"
 					},
 					{
 						"name":"LEVEL 11",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 11)"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 11)"
 					},
 					{
 						"name":"LEVEL 12",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 12)"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 12)"
 					},
 					{
 						"name":"LEVEL 13～",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level >= 13)"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level >= 13)"
 					},
 					{
 						"name":"LEVEL ～0 NOPLAY",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 1 NOPLAY",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 1) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 1) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 2 NOPLAY",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 2) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 2) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 3 NOPLAY",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 3) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 3) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 4 NOPLAY",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 4) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 4) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 5 NOPLAY",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 5) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 5) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 6 NOPLAY",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 6) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 6) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 7 NOPLAY",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 7) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 7) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 8 NOPLAY",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 8) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 8) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 9 NOPLAY",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 9) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 9) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 10 NOPLAY",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 10) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 10) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 11 NOPLAY",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 11) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 11) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 12 NOPLAY",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level = 12) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level = 12) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 13～ NOPLAY",
-						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE  '%ワルツ%') AND (level >= 13) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%waltz%' or lower(genre) LIKE '%ワルツ%') AND (level >= 13) AND score.clear is null"
 					}
 				]
 			},
@@ -4097,119 +4791,119 @@
 				"folder":[
 					{
 						"name":"ALL",
-						"sql":"lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%'"
+						"sql":"lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%'"
 					},
 					{
 						"name":"LEVEL ～0",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level <= 0 OR level IS NULL)"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level <= 0 OR level IS NULL)"
 					},
 					{
 						"name":"LEVEL 1",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 1)"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 1)"
 					},
 					{
 						"name":"LEVEL 2",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 2)"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 2)"
 					},
 					{
 						"name":"LEVEL 3",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 3)"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 3)"
 					},
 					{
 						"name":"LEVEL 4",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 4)"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 4)"
 					},
 					{
 						"name":"LEVEL 5",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 5)"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 5)"
 					},
 					{
 						"name":"LEVEL 6",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 6)"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 6)"
 					},
 					{
 						"name":"LEVEL 7",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 7)"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 7)"
 					},
 					{
 						"name":"LEVEL 8",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 8)"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 8)"
 					},
 					{
 						"name":"LEVEL 9",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 9)"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 9)"
 					},
 					{
 						"name":"LEVEL 10",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 10)"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 10)"
 					},
 					{
 						"name":"LEVEL 11",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 11)"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 11)"
 					},
 					{
 						"name":"LEVEL 12",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 12)"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 12)"
 					},
 					{
 						"name":"LEVEL 13～",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level >= 13)"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level >= 13)"
 					},
 					{
 						"name":"LEVEL ～0 NOPLAY",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 1 NOPLAY",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 1) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 1) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 2 NOPLAY",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 2) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 2) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 3 NOPLAY",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 3) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 3) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 4 NOPLAY",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 4) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 4) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 5 NOPLAY",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 5) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 5) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 6 NOPLAY",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 6) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 6) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 7 NOPLAY",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 7) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 7) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 8 NOPLAY",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 8) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 8) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 9 NOPLAY",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 9) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 9) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 10 NOPLAY",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 10) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 10) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 11 NOPLAY",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 11) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 11) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 12 NOPLAY",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level = 12) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level = 12) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 13～ NOPLAY",
-						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE  '%ゴシック%') AND (level >= 13) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%gothic%' or lower(genre) LIKE '%ゴシック%') AND (level >= 13) AND score.clear is null"
 					}
 				]
 			},
@@ -4218,119 +4912,119 @@
 				"folder":[
 					{
 						"name":"ALL",
-						"sql":"lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%'"
+						"sql":"lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%'"
 					},
 					{
 						"name":"LEVEL ～0",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level <= 0 OR level IS NULL)"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level <= 0 OR level IS NULL)"
 					},
 					{
 						"name":"LEVEL 1",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 1)"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 1)"
 					},
 					{
 						"name":"LEVEL 2",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 2)"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 2)"
 					},
 					{
 						"name":"LEVEL 3",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 3)"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 3)"
 					},
 					{
 						"name":"LEVEL 4",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 4)"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 4)"
 					},
 					{
 						"name":"LEVEL 5",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 5)"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 5)"
 					},
 					{
 						"name":"LEVEL 6",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 6)"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 6)"
 					},
 					{
 						"name":"LEVEL 7",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 7)"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 7)"
 					},
 					{
 						"name":"LEVEL 8",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 8)"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 8)"
 					},
 					{
 						"name":"LEVEL 9",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 9)"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 9)"
 					},
 					{
 						"name":"LEVEL 10",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 10)"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 10)"
 					},
 					{
 						"name":"LEVEL 11",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 11)"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 11)"
 					},
 					{
 						"name":"LEVEL 12",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 12)"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 12)"
 					},
 					{
 						"name":"LEVEL 13～",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level >= 13)"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level >= 13)"
 					},
 					{
 						"name":"LEVEL ～0 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 1 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 1) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 1) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 2 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 2) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 2) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 3 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 3) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 3) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 4 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 4) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 4) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 5 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 5) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 5) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 6 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 6) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 6) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 7 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 7) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 7) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 8 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 8) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 8) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 9 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 9) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 9) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 10 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 10) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 10) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 11 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 11) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 11) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 12 NOPLAY",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level = 12) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level = 12) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 13～ NOPLAY",
-						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE  '%レイヴ%') AND (level >= 13) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%rave%' or lower(genre) LIKE '%レイヴ%') AND (level >= 13) AND score.clear is null"
 					}
 				]
 			},
@@ -4339,119 +5033,119 @@
 				"folder":[
 					{
 						"name":"ALL",
-						"sql":"lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%'"
+						"sql":"lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%'"
 					},
 					{
 						"name":"LEVEL ～0",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level <= 0 OR level IS NULL)"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level <= 0 OR level IS NULL)"
 					},
 					{
 						"name":"LEVEL 1",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 1)"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 1)"
 					},
 					{
 						"name":"LEVEL 2",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 2)"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 2)"
 					},
 					{
 						"name":"LEVEL 3",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 3)"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 3)"
 					},
 					{
 						"name":"LEVEL 4",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 4)"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 4)"
 					},
 					{
 						"name":"LEVEL 5",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 5)"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 5)"
 					},
 					{
 						"name":"LEVEL 6",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 6)"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 6)"
 					},
 					{
 						"name":"LEVEL 7",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 7)"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 7)"
 					},
 					{
 						"name":"LEVEL 8",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 8)"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 8)"
 					},
 					{
 						"name":"LEVEL 9",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 9)"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 9)"
 					},
 					{
 						"name":"LEVEL 10",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 10)"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 10)"
 					},
 					{
 						"name":"LEVEL 11",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 11)"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 11)"
 					},
 					{
 						"name":"LEVEL 12",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 12)"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 12)"
 					},
 					{
 						"name":"LEVEL 13～",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level >= 13)"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level >= 13)"
 					},
 					{
 						"name":"LEVEL ～0 NOPLAY",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 1 NOPLAY",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 1) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 1) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 2 NOPLAY",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 2) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 2) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 3 NOPLAY",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 3) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 3) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 4 NOPLAY",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 4) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 4) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 5 NOPLAY",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 5) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 5) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 6 NOPLAY",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 6) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 6) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 7 NOPLAY",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 7) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 7) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 8 NOPLAY",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 8) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 8) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 9 NOPLAY",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 9) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 9) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 10 NOPLAY",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 10) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 10) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 11 NOPLAY",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 11) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 11) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 12 NOPLAY",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level = 12) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level = 12) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 13～ NOPLAY",
-						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE  '%アンビエント%') AND (level >= 13) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%AMBIENT%' or lower(genre) LIKE '%アンビエント%') AND (level >= 13) AND score.clear is null"
 					}
 				]
 			},
@@ -4460,119 +5154,119 @@
 				"folder":[
 					{
 						"name":"ALL",
-						"sql":"lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%'"
+						"sql":"lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%'"
 					},
 					{
 						"name":"LEVEL ～0",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level <= 0 OR level IS NULL)"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level <= 0 OR level IS NULL)"
 					},
 					{
 						"name":"LEVEL 1",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 1)"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 1)"
 					},
 					{
 						"name":"LEVEL 2",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 2)"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 2)"
 					},
 					{
 						"name":"LEVEL 3",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 3)"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 3)"
 					},
 					{
 						"name":"LEVEL 4",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 4)"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 4)"
 					},
 					{
 						"name":"LEVEL 5",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 5)"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 5)"
 					},
 					{
 						"name":"LEVEL 6",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 6)"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 6)"
 					},
 					{
 						"name":"LEVEL 7",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 7)"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 7)"
 					},
 					{
 						"name":"LEVEL 8",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 8)"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 8)"
 					},
 					{
 						"name":"LEVEL 9",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 9)"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 9)"
 					},
 					{
 						"name":"LEVEL 10",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 10)"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 10)"
 					},
 					{
 						"name":"LEVEL 11",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 11)"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 11)"
 					},
 					{
 						"name":"LEVEL 12",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 12)"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 12)"
 					},
 					{
 						"name":"LEVEL 13～",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level >= 13)"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level >= 13)"
 					},
 					{
 						"name":"LEVEL ～0 NOPLAY",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 1 NOPLAY",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 1) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 1) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 2 NOPLAY",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 2) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 2) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 3 NOPLAY",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 3) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 3) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 4 NOPLAY",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 4) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 4) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 5 NOPLAY",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 5) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 5) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 6 NOPLAY",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 6) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 6) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 7 NOPLAY",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 7) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 7) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 8 NOPLAY",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 8) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 8) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 9 NOPLAY",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 9) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 9) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 10 NOPLAY",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 10) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 10) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 11 NOPLAY",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 11) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 11) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 12 NOPLAY",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level = 12) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level = 12) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 13～ NOPLAY",
-						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE  '%ブレイクビーツ%') AND (level >= 13) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%BREAK%BEATS%' or lower(genre) LIKE '%ブレイクビーツ%') AND (level >= 13) AND score.clear is null"
 					}
 				]
 			},
@@ -4581,119 +5275,119 @@
 				"folder":[
 					{
 						"name":"ALL",
-						"sql":"lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%'"
+						"sql":"lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%'"
 					},
 					{
 						"name":"LEVEL ～0",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level <= 0 OR level IS NULL)"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level <= 0 OR level IS NULL)"
 					},
 					{
 						"name":"LEVEL 1",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 1)"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 1)"
 					},
 					{
 						"name":"LEVEL 2",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 2)"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 2)"
 					},
 					{
 						"name":"LEVEL 3",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 3)"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 3)"
 					},
 					{
 						"name":"LEVEL 4",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 4)"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 4)"
 					},
 					{
 						"name":"LEVEL 5",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 5)"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 5)"
 					},
 					{
 						"name":"LEVEL 6",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 6)"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 6)"
 					},
 					{
 						"name":"LEVEL 7",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 7)"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 7)"
 					},
 					{
 						"name":"LEVEL 8",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 8)"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 8)"
 					},
 					{
 						"name":"LEVEL 9",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 9)"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 9)"
 					},
 					{
 						"name":"LEVEL 10",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 10)"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 10)"
 					},
 					{
 						"name":"LEVEL 11",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 11)"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 11)"
 					},
 					{
 						"name":"LEVEL 12",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 12)"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 12)"
 					},
 					{
 						"name":"LEVEL 13～",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level >= 13)"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level >= 13)"
 					},
 					{
 						"name":"LEVEL ～0 NOPLAY",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 1 NOPLAY",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 1) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 1) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 2 NOPLAY",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 2) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 2) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 3 NOPLAY",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 3) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 3) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 4 NOPLAY",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 4) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 4) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 5 NOPLAY",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 5) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 5) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 6 NOPLAY",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 6) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 6) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 7 NOPLAY",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 7) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 7) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 8 NOPLAY",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 8) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 8) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 9 NOPLAY",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 9) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 9) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 10 NOPLAY",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 10) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 10) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 11 NOPLAY",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 11) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 11) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 12 NOPLAY",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level = 12) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level = 12) AND score.clear is null"
 					},
 					{
 						"name":"LEVEL 13～ NOPLAY",
-						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE  '%プログレッシブ%') AND (level >= 13) AND score.clear is null"
+						"sql":"(lower(genre) LIKE '%PROGRESSIVE%' or lower(genre) LIKE '%プログレッシブ%') AND (level >= 13) AND score.clear is null"
 					}
 				]
 			},
@@ -4815,6 +5509,853 @@
 					{
 						"name":"LEVEL 13～ NOPLAY",
 						"sql":"(lower(genre) LIKE 'R&B' or lower(genre)) AND (level >= 13) AND score.clear is null"
+					}
+				]
+			},
+			{
+				"name":"DANCE",
+				"folder":[
+					{
+						"name":"ALL",
+						"sql":"lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%'"
+					},
+					{
+						"name":"LEVEL ～0",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level <= 0 OR level IS NULL)"
+					},
+					{
+						"name":"LEVEL 1",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 1)"
+					},
+					{
+						"name":"LEVEL 2",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 2)"
+					},
+					{
+						"name":"LEVEL 3",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 3)"
+					},
+					{
+						"name":"LEVEL 4",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 4)"
+					},
+					{
+						"name":"LEVEL 5",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 5)"
+					},
+					{
+						"name":"LEVEL 6",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 6)"
+					},
+					{
+						"name":"LEVEL 7",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 7)"
+					},
+					{
+						"name":"LEVEL 8",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 8)"
+					},
+					{
+						"name":"LEVEL 9",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 9)"
+					},
+					{
+						"name":"LEVEL 10",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 10)"
+					},
+					{
+						"name":"LEVEL 11",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 11)"
+					},
+					{
+						"name":"LEVEL 12",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 12)"
+					},
+					{
+						"name":"LEVEL 13～",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level >= 13)"
+					},
+					{
+						"name":"LEVEL ～0 NOPLAY",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 1 NOPLAY",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 1) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 2 NOPLAY",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 2) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 3 NOPLAY",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 3) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 4 NOPLAY",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 4) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 5 NOPLAY",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 5) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 6 NOPLAY",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 6) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 7 NOPLAY",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 7) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 8 NOPLAY",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 8) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 9 NOPLAY",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 9) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 10 NOPLAY",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 10) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 11 NOPLAY",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 11) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 12 NOPLAY",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level = 12) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 13～ NOPLAY",
+						"sql":"(lower(genre) LIKE '%DANCE%' or lower(genre) LIKE '%ダンス%') AND (level >= 13) AND score.clear is null"
+					}
+				]
+			},
+			{
+				"name":"TECH",
+				"folder":[
+					{
+						"name":"ALL",
+						"sql":"lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%'"
+					},
+					{
+						"name":"LEVEL ～0",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level <= 0 OR level IS NULL)"
+					},
+					{
+						"name":"LEVEL 1",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 1)"
+					},
+					{
+						"name":"LEVEL 2",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 2)"
+					},
+					{
+						"name":"LEVEL 3",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 3)"
+					},
+					{
+						"name":"LEVEL 4",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 4)"
+					},
+					{
+						"name":"LEVEL 5",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 5)"
+					},
+					{
+						"name":"LEVEL 6",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 6)"
+					},
+					{
+						"name":"LEVEL 7",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 7)"
+					},
+					{
+						"name":"LEVEL 8",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 8)"
+					},
+					{
+						"name":"LEVEL 9",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 9)"
+					},
+					{
+						"name":"LEVEL 10",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 10)"
+					},
+					{
+						"name":"LEVEL 11",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 11)"
+					},
+					{
+						"name":"LEVEL 12",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 12)"
+					},
+					{
+						"name":"LEVEL 13～",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level >= 13)"
+					},
+					{
+						"name":"LEVEL ～0 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 1 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 1) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 2 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 2) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 3 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 3) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 4 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 4) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 5 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 5) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 6 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 6) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 7 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 7) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 8 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 8) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 9 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 9) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 10 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 10) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 11 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 11) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 12 NOPLAY",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level = 12) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 13～ NOPLAY",
+						"sql":"(lower(genre) LIKE '%TECH%' or lower(genre) LIKE '%テック%') AND (level >= 13) AND score.clear is null"
+					}
+				]
+			},
+			{
+				"name":"GABBA",
+				"folder":[
+					{
+						"name":"ALL",
+						"sql":"lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%'"
+					},
+					{
+						"name":"LEVEL ～0",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level <= 0 OR level IS NULL)"
+					},
+					{
+						"name":"LEVEL 1",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 1)"
+					},
+					{
+						"name":"LEVEL 2",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 2)"
+					},
+					{
+						"name":"LEVEL 3",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 3)"
+					},
+					{
+						"name":"LEVEL 4",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 4)"
+					},
+					{
+						"name":"LEVEL 5",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 5)"
+					},
+					{
+						"name":"LEVEL 6",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 6)"
+					},
+					{
+						"name":"LEVEL 7",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 7)"
+					},
+					{
+						"name":"LEVEL 8",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 8)"
+					},
+					{
+						"name":"LEVEL 9",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 9)"
+					},
+					{
+						"name":"LEVEL 10",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 10)"
+					},
+					{
+						"name":"LEVEL 11",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 11)"
+					},
+					{
+						"name":"LEVEL 12",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 12)"
+					},
+					{
+						"name":"LEVEL 13～",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level >= 13)"
+					},
+					{
+						"name":"LEVEL ～0 NOPLAY",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 1 NOPLAY",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 1) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 2 NOPLAY",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 2) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 3 NOPLAY",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 3) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 4 NOPLAY",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 4) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 5 NOPLAY",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 5) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 6 NOPLAY",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 6) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 7 NOPLAY",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 7) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 8 NOPLAY",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 8) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 9 NOPLAY",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 9) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 10 NOPLAY",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 10) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 11 NOPLAY",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 11) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 12 NOPLAY",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level = 12) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 13～ NOPLAY",
+						"sql":"(lower(genre) LIKE '%GABBA%' or lower(genre) LIKE '%ガバ%') AND (level >= 13) AND score.clear is null"
+					}
+				]
+			},
+			{
+				"name":"2STEP",
+				"folder":[
+					{
+						"name":"ALL",
+						"sql":"lower(genre) LIKE '%2STEP%'"
+					},
+					{
+						"name":"LEVEL ～0",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level <= 0 OR level IS NULL)"
+					},
+					{
+						"name":"LEVEL 1",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 1)"
+					},
+					{
+						"name":"LEVEL 2",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 2)"
+					},
+					{
+						"name":"LEVEL 3",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 3)"
+					},
+					{
+						"name":"LEVEL 4",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 4)"
+					},
+					{
+						"name":"LEVEL 5",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 5)"
+					},
+					{
+						"name":"LEVEL 6",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 6)"
+					},
+					{
+						"name":"LEVEL 7",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 7)"
+					},
+					{
+						"name":"LEVEL 8",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 8)"
+					},
+					{
+						"name":"LEVEL 9",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 9)"
+					},
+					{
+						"name":"LEVEL 10",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 10)"
+					},
+					{
+						"name":"LEVEL 11",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 11)"
+					},
+					{
+						"name":"LEVEL 12",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 12)"
+					},
+					{
+						"name":"LEVEL 13～",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level >= 13)"
+					},
+					{
+						"name":"LEVEL ～0 NOPLAY",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 1 NOPLAY",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 1) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 2 NOPLAY",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 2) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 3 NOPLAY",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 3) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 4 NOPLAY",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 4) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 5 NOPLAY",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 5) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 6 NOPLAY",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 6) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 7 NOPLAY",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 7) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 8 NOPLAY",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 8) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 9 NOPLAY",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 9) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 10 NOPLAY",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 10) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 11 NOPLAY",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 11) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 12 NOPLAY",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level = 12) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 13～ NOPLAY",
+						"sql":"(lower(genre) LIKE '%2STEP%') AND (level >= 13) AND score.clear is null"
+					}
+				]
+			},
+			{
+				"name":"BALLAD",
+				"folder":[
+					{
+						"name":"ALL",
+						"sql":"lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%'"
+					},
+					{
+						"name":"LEVEL ～0",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level <= 0 OR level IS NULL)"
+					},
+					{
+						"name":"LEVEL 1",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 1)"
+					},
+					{
+						"name":"LEVEL 2",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 2)"
+					},
+					{
+						"name":"LEVEL 3",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 3)"
+					},
+					{
+						"name":"LEVEL 4",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 4)"
+					},
+					{
+						"name":"LEVEL 5",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 5)"
+					},
+					{
+						"name":"LEVEL 6",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 6)"
+					},
+					{
+						"name":"LEVEL 7",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 7)"
+					},
+					{
+						"name":"LEVEL 8",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 8)"
+					},
+					{
+						"name":"LEVEL 9",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 9)"
+					},
+					{
+						"name":"LEVEL 10",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 10)"
+					},
+					{
+						"name":"LEVEL 11",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 11)"
+					},
+					{
+						"name":"LEVEL 12",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 12)"
+					},
+					{
+						"name":"LEVEL 13～",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level >= 13)"
+					},
+					{
+						"name":"LEVEL ～0 NOPLAY",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 1 NOPLAY",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 1) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 2 NOPLAY",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 2) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 3 NOPLAY",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 3) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 4 NOPLAY",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 4) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 5 NOPLAY",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 5) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 6 NOPLAY",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 6) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 7 NOPLAY",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 7) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 8 NOPLAY",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 8) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 9 NOPLAY",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 9) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 10 NOPLAY",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 10) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 11 NOPLAY",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 11) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 12 NOPLAY",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level = 12) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 13～ NOPLAY",
+						"sql":"(lower(genre) LIKE '%BALLAD%' or lower(genre) LIKE '%バラード%') AND (level >= 13) AND score.clear is null"
+					}
+				]
+			},
+			{
+				"name":"NOSTALGIC",
+				"folder":[
+					{
+						"name":"ALL",
+						"sql":"lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%'"
+					},
+					{
+						"name":"LEVEL ～0",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level <= 0 OR level IS NULL)"
+					},
+					{
+						"name":"LEVEL 1",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 1)"
+					},
+					{
+						"name":"LEVEL 2",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 2)"
+					},
+					{
+						"name":"LEVEL 3",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 3)"
+					},
+					{
+						"name":"LEVEL 4",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 4)"
+					},
+					{
+						"name":"LEVEL 5",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 5)"
+					},
+					{
+						"name":"LEVEL 6",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 6)"
+					},
+					{
+						"name":"LEVEL 7",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 7)"
+					},
+					{
+						"name":"LEVEL 8",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 8)"
+					},
+					{
+						"name":"LEVEL 9",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 9)"
+					},
+					{
+						"name":"LEVEL 10",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 10)"
+					},
+					{
+						"name":"LEVEL 11",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 11)"
+					},
+					{
+						"name":"LEVEL 12",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 12)"
+					},
+					{
+						"name":"LEVEL 13～",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level >= 13)"
+					},
+					{
+						"name":"LEVEL ～0 NOPLAY",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 1 NOPLAY",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 1) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 2 NOPLAY",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 2) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 3 NOPLAY",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 3) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 4 NOPLAY",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 4) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 5 NOPLAY",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 5) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 6 NOPLAY",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 6) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 7 NOPLAY",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 7) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 8 NOPLAY",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 8) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 9 NOPLAY",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 9) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 10 NOPLAY",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 10) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 11 NOPLAY",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 11) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 12 NOPLAY",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 12) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 13～ NOPLAY",
+						"sql":"(lower(genre) LIKE '%NOSTALGIC%' or lower(genre) LIKE '%ノスタルジック%') AND (level >= 13) AND score.clear is null"
+					}
+				]
+			},
+			{
+				"name":"UPLIFTING TRANCE",
+				"folder":[
+					{
+						"name":"ALL",
+						"sql":"lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%'"
+					},
+					{
+						"name":"LEVEL ～0",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level <= 0 OR level IS NULL)"
+					},
+					{
+						"name":"LEVEL 1",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 1)"
+					},
+					{
+						"name":"LEVEL 2",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 2)"
+					},
+					{
+						"name":"LEVEL 3",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 3)"
+					},
+					{
+						"name":"LEVEL 4",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 4)"
+					},
+					{
+						"name":"LEVEL 5",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 5)"
+					},
+					{
+						"name":"LEVEL 6",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 6)"
+					},
+					{
+						"name":"LEVEL 7",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 7)"
+					},
+					{
+						"name":"LEVEL 8",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 8)"
+					},
+					{
+						"name":"LEVEL 9",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 9)"
+					},
+					{
+						"name":"LEVEL 10",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 10)"
+					},
+					{
+						"name":"LEVEL 11",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 11)"
+					},
+					{
+						"name":"LEVEL 12",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 12)"
+					},
+					{
+						"name":"LEVEL 13～",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level >= 13)"
+					},
+					{
+						"name":"LEVEL ～0 NOPLAY",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level <= 0 OR level IS NULL) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 1 NOPLAY",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 1) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 2 NOPLAY",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 2) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 3 NOPLAY",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 3) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 4 NOPLAY",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 4) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 5 NOPLAY",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 5) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 6 NOPLAY",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 6) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 7 NOPLAY",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 7) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 8 NOPLAY",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 8) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 9 NOPLAY",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 9) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 10 NOPLAY",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 10) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 11 NOPLAY",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 11) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 12 NOPLAY",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level = 12) AND score.clear is null"
+					},
+					{
+						"name":"LEVEL 13～ NOPLAY",
+						"sql":"(lower(genre) LIKE '%UPLIFTING%TRANCE%' or lower(genre) LIKE '%ノスタルジック%') AND (level >= 13) AND score.clear is null"
 					}
 				]
 			}
@@ -6629,6 +8170,42 @@
 				"sql":"strftime('%s', 'now') - adddate <= 86400*7"
 			}
 		]
-	}
-
+	},
+	{
+		"name":"RCENTLY PLAYED",
+		"folder":[
+			{
+				"name":"TODAY",
+				"sql":"scorelog.date >= strftime('%s', CURRENT_DATE, 'utc')"
+			},
+			{
+				"name":"2DAYS AGO",
+				"sql":"scorelog.date < strftime('%s', CURRENT_DATE, 'utc') AND scorelog.date >= strftime('%s', CURRENT_DATE, 'utc') - 86400*1"
+			},
+			{
+				"name":"3DAYS AGO",
+				"sql":"scorelog.date < strftime('%s', CURRENT_DATE, 'utc') - 86400*1 AND scorelog.date >= strftime('%s', CURRENT_DATE, 'utc') - 86400*2"
+			},
+			{
+				"name":"4DAYS AGO",
+				"sql":"scorelog.date < strftime('%s', CURRENT_DATE, 'utc') - 86400*2 AND scorelog.date >= strftime('%s', CURRENT_DATE, 'utc') - 86400*3"
+			},
+			{
+				"name":"5DAYS AGO",
+				"sql":"scorelog.date < strftime('%s', CURRENT_DATE, 'utc') - 86400*3 AND scorelog.date >= strftime('%s', CURRENT_DATE, 'utc') - 86400*4"
+			},
+			{
+				"name":"6DAYS AGO",
+				"sql":"scorelog.date < strftime('%s', CURRENT_DATE, 'utc') - 86400*4 AND scorelog.date >= strftime('%s', CURRENT_DATE, 'utc') - 86400*5"
+			},
+			{
+				"name":"7DAYS AGO",
+				"sql":"scorelog.date < strftime('%s', CURRENT_DATE, 'utc') - 86400*5 AND scorelog.date >= strftime('%s', CURRENT_DATE, 'utc') - 86400*6"
+			},
+			{
+				"name":"THIS WEEK",
+				"sql":"scorelog.date >= strftime('%s', CURRENT_DATE, 'utc') - 86400*6"
+			}
+			]
+		}
 ]
